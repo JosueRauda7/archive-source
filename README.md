@@ -1,7 +1,6 @@
 #Bienvenido a Archieve Source 
 
 <p style="font-size: 200px; text-align: center; margin: 0;">📁</p>
-![]()
 
 **¿Qué es Archive Source?**
 
