@@ -1,11 +1,10 @@
 # Bienvenido a Archieve Source 
 
-```html
-<!DOCTYPE HTML>
+
 <html>
-    <p style="font-size: 200px; text-align: center; margin: 0;">📁</p>
+    <p style="font-size: 100px; text-align: center;">📁
+    </p>
 </html>
-```
 
 **¿Qué es Archive Source?**
 
