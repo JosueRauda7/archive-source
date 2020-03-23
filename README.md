@@ -26,5 +26,5 @@ Las herramientas tecnológicas se encuentran:
 
 ## Team Developer
 
-- Josué Milton Rauda Ramírez    |    <a href="https://github.com/JosueRauda7" target="_blank">JosueRauda7</a>
-- Iván Alexander Martínez García|    <a href="https://github.com/ivanboot" target="_blank">ivanboot</a>
+- Josué Milton Rauda Ramírez     |    <a href="https://github.com/JosueRauda7" target="_blank">JosueRauda7</a>
+- Iván Alexander Martínez García |    <a href="https://github.com/ivanboot" target="_blank">ivanboot</a>
