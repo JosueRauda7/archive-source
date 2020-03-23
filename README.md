@@ -26,4 +26,4 @@ Las herramientas tecnológicas se encuentran:
 
 ## Team Developer
 
-- Josué Milton Rauda Ramírez <a href="https://github.com/JosueRauda7" target="_blank">JosueRauda7</a>
+- Josué Milton Rauda Ramírez    |    <a href="https://github.com/JosueRauda7" target="_blank">JosueRauda7</a>
