@@ -1,10 +1,4 @@
-# Bienvenido a Archieve Source 
-
-
-<html>
-    <p style="font-size: 100px; text-align: center;">📁
-    </p>
-</html>
+# Bienvenido a Archieve Source
 
 **¿Qué es Archive Source?**
 
@@ -29,3 +23,7 @@ Las herramientas tecnológicas se encuentran:
 - **Visual Studio Community:** como IDE gratuito creado para la comunidad, el cual cumple con las características competentes para el proyecto solución.
 - **Digital Ocean:** un proveedor de máquinas virtuales que serán utilizados como servidor para la base de datos de la ONG. (Sujeto a cambios).
 - **MySQL:** para el manejo de base de datos.
+
+## Team Developer
+
+- Josué Milton Rauda Ramírez <a href="https://github.com/JosueRauda7" target="_blank">JosueRauda7</a>
