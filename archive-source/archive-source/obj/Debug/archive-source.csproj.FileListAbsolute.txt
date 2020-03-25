@@ -1,0 +1,11 @@
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\bin\Debug\archive-source.exe.config
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\bin\Debug\archive-source.exe
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\bin\Debug\archive-source.pdb
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive-source.csprojAssemblyReference.cache
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.Properties.Resources.resources
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive-source.csproj.GenerateResource.cache
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive-source.csproj.CopyComplete
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive-source.exe
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive-source.pdb
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.EjemploInterfazUsuario.resources
