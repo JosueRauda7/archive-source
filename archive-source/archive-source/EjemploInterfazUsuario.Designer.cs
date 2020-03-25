@@ -259,7 +259,7 @@
             this.ClientSize = new System.Drawing.Size(1200, 700);
             this.Controls.Add(this.panelPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MinimumSize = new System.Drawing.Size(960, 480);
+            this.MinimumSize = new System.Drawing.Size(960, 700);
             this.Name = "EjemploInterfazUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
