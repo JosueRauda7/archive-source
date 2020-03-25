@@ -14,6 +14,8 @@ namespace archive_source
 
             formularios = panelForm.Controls.OfType<FormularioAbrir>().FirstOrDefault();
 
+            formularios = null; //Cerrar los formularios dentro del panel
+
             if (formularios == null)
             {
                 formularios = new FormularioAbrir
