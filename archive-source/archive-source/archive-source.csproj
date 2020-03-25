@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarForm.cs" />
     <Compile Include="EjemploInterfazUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +63,12 @@
     <Compile Include="FrmOpcionEjemplo.Designer.cs">
       <DependentUpon>FrmOpcionEjemplo.cs</DependentUpon>
     </Compile>
+    <Compile Include="OtroFormEjemplo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtroFormEjemplo.Designer.cs">
+      <DependentUpon>OtroFormEjemplo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EjemploInterfazUsuario.resx">
@@ -69,6 +76,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOpcionEjemplo.resx">
       <DependentUpon>FrmOpcionEjemplo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtroFormEjemplo.resx">
+      <DependentUpon>OtroFormEjemplo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -16,5 +16,13 @@ namespace archive_source
         {
             InitializeComponent();
         }
+
+        private void bunifuTileButton1_Click(object sender, EventArgs e)
+        {
+            AgregarForm agregarForm = new AgregarForm();
+            OtroFormEjemplo nuevoFormulario = new OtroFormEjemplo();
+            agregarForm.abrirFormulario<OtroFormEjemplo>(panelForm);
+        }
+
     }
 }

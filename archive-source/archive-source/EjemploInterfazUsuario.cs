@@ -38,6 +38,12 @@ namespace archive_source
             panelForm.Width = ClientRectangle.Width - panelMenu.Width - 12;
 
             panelForm.Height = ClientRectangle.Height - panelSuperior.Height - PanelInferior.Height - 12;
+            
+            if (btnRestaurar.Visible)
+            {
+                btnRestaurar.Visible = false;
+                btnMaximizar.Visible = true;
+            }
 
             Invalidate();
 
@@ -146,36 +152,8 @@ namespace archive_source
 
         private void btnOpcionMenu_Click(object sender, EventArgs e)
         {
-            abrirFormulario<FrmOpcionEjemplo>();
-        }
-
-        private void abrirFormulario<FormularioAbrir>() where FormularioAbrir:Form, new()
-        {
-            Form formularios; //Contenedor de formularios (panelForm)
-
-            formularios = panelForm.Controls.OfType<FormularioAbrir>().FirstOrDefault();
-
-            if(formularios == null)
-            {
-                formularios = new FormularioAbrir
-                {
-                    TopLevel = false,
-                    Dock = DockStyle.Fill
-                };
-
-                panelForm.Controls.Add(formularios);
-
-                panelForm.Tag = formularios;
-
-                formularios.Show();
-
-                formularios.BringToFront();
-            }
-            else
-            {
-                formularios.BringToFront();
-            }
-
+            AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<FrmOpcionEjemplo>(panelForm);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
