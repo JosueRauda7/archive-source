@@ -15,12 +15,13 @@ namespace archive_source
 
         private const int sizePanelFormX = 951;
         private const int sizePanelFormY = 482;
-        private const int locationPanelFormX = 236;
-        private const int locationPanelFormY = 136;
+        private const int sizePanelMenuX = 232;
+        private const int sizePanelMenuY = 700;
         private const int sizegrid = 10;
         private const int areamouse = 132;
         private const int botonizquierdo = 17;
         private Rectangle rectangulogrid;
+        private bool menuContraido = false;
 
         protected override void OnSizeChanged(EventArgs e)
         {
@@ -123,6 +124,59 @@ namespace archive_source
             btnRestaurar.Visible = true;
         }
 
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            if(menuContraido)
+            {
+                btnOpcionMenu.IconMarginRight = 0;
+                panelMenu.Width = sizePanelMenuX;
+                panelForm.Left = panelMenu.Width + 3;
+                panelForm.Width = panelPrincipal.Width - panelMenu.Width - 12;
+                menuContraido = false;
+            }
+            else
+            {
+                btnOpcionMenu.IconMarginRight = 10;
+                panelMenu.Width = sizePanelMenuX - 150;
+                panelForm.Left = panelMenu.Width + 3;
+                panelForm.Width = panelPrincipal.Width - panelMenu.Width - 12;
+                menuContraido = true;
+            }
+        }
+
+        private void btnOpcionMenu_Click(object sender, EventArgs e)
+        {
+            abrirFormulario<FrmOpcionEjemplo>();
+        }
+
+        private void abrirFormulario<FormularioAbrir>() where FormularioAbrir:Form, new()
+        {
+            Form formularios; //Contenedor de formularios (panelForm)
+
+            formularios = panelForm.Controls.OfType<FormularioAbrir>().FirstOrDefault();
+
+            if(formularios == null)
+            {
+                formularios = new FormularioAbrir
+                {
+                    TopLevel = false,
+                    Dock = DockStyle.Fill
+                };
+
+                panelForm.Controls.Add(formularios);
+
+                panelForm.Tag = formularios;
+
+                formularios.Show();
+
+                formularios.BringToFront();
+            }
+            else
+            {
+                formularios.BringToFront();
+            }
+
+        }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {

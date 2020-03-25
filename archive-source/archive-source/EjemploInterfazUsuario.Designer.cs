@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EjemploInterfazUsuario));
             this.panelPrincipal = new System.Windows.Forms.Panel();
+            this.panelForm = new System.Windows.Forms.Panel();
             this.PanelInferior = new System.Windows.Forms.Panel();
             this.panelSuperior = new System.Windows.Forms.Panel();
             this.panelBotones = new System.Windows.Forms.Panel();
@@ -40,11 +41,10 @@
             this.btnMaximizar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMenu = new Bunifu.Framework.UI.BunifuImageButton();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnOpcion = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnOpcionMenu = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.panelForm = new System.Windows.Forms.Panel();
             this.panelPrincipal.SuspendLayout();
             this.panelSuperior.SuspendLayout();
             this.panelBotones.SuspendLayout();
@@ -68,6 +68,14 @@
             this.panelPrincipal.Size = new System.Drawing.Size(1200, 700);
             this.panelPrincipal.TabIndex = 0;
             this.panelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panelForm
+            // 
+            this.panelForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(128)))));
+            this.panelForm.Location = new System.Drawing.Point(238, 106);
+            this.panelForm.Name = "panelForm";
+            this.panelForm.Size = new System.Drawing.Size(949, 482);
+            this.panelForm.TabIndex = 3;
             // 
             // PanelInferior
             // 
@@ -172,11 +180,12 @@
             this.btnMenu.TabIndex = 3;
             this.btnMenu.TabStop = false;
             this.btnMenu.Zoom = 10;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
-            this.panelMenu.Controls.Add(this.btnOpcion);
+            this.panelMenu.Controls.Add(this.btnOpcionMenu);
             this.panelMenu.Controls.Add(this.bunifuSeparator1);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
@@ -184,41 +193,40 @@
             this.panelMenu.Size = new System.Drawing.Size(232, 700);
             this.panelMenu.TabIndex = 0;
             // 
-            // btnOpcion
+            // btnOpcionMenu
             // 
-            this.btnOpcion.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnOpcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnOpcion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnOpcion.BorderRadius = 0;
-            this.btnOpcion.ButtonText = "Sub Menú";
-            this.btnOpcion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOpcion.DisabledColor = System.Drawing.Color.Gray;
-            this.btnOpcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpcion.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnOpcion.Iconimage = null;
-            this.btnOpcion.Iconimage_right = null;
-            this.btnOpcion.Iconimage_right_Selected = null;
-            this.btnOpcion.Iconimage_Selected = null;
-            this.btnOpcion.IconMarginLeft = 0;
-            this.btnOpcion.IconMarginRight = 0;
-            this.btnOpcion.IconRightVisible = true;
-            this.btnOpcion.IconRightZoom = 0D;
-            this.btnOpcion.IconVisible = true;
-            this.btnOpcion.IconZoom = 90D;
-            this.btnOpcion.IsTab = false;
-            this.btnOpcion.Location = new System.Drawing.Point(4, 187);
-            this.btnOpcion.Margin = new System.Windows.Forms.Padding(0);
-            this.btnOpcion.Name = "btnOpcion";
-            this.btnOpcion.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnOpcion.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnOpcion.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnOpcion.selected = false;
-            this.btnOpcion.Size = new System.Drawing.Size(226, 68);
-            this.btnOpcion.TabIndex = 1;
-            this.btnOpcion.Text = "Sub Menú";
-            this.btnOpcion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnOpcion.Textcolor = System.Drawing.Color.White;
-            this.btnOpcion.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpcionMenu.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnOpcionMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnOpcionMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnOpcionMenu.BorderRadius = 0;
+            this.btnOpcionMenu.ButtonText = "Opción Ejemplo";
+            this.btnOpcionMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOpcionMenu.DisabledColor = System.Drawing.Color.Gray;
+            this.btnOpcionMenu.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnOpcionMenu.Iconimage = global::archive_source.Properties.Resources.guardar;
+            this.btnOpcionMenu.Iconimage_right = null;
+            this.btnOpcionMenu.Iconimage_right_Selected = null;
+            this.btnOpcionMenu.Iconimage_Selected = null;
+            this.btnOpcionMenu.IconMarginLeft = 20;
+            this.btnOpcionMenu.IconMarginRight = 0;
+            this.btnOpcionMenu.IconRightVisible = true;
+            this.btnOpcionMenu.IconRightZoom = 0D;
+            this.btnOpcionMenu.IconVisible = true;
+            this.btnOpcionMenu.IconZoom = 90D;
+            this.btnOpcionMenu.IsTab = false;
+            this.btnOpcionMenu.Location = new System.Drawing.Point(0, 190);
+            this.btnOpcionMenu.Name = "btnOpcionMenu";
+            this.btnOpcionMenu.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnOpcionMenu.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnOpcionMenu.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnOpcionMenu.selected = false;
+            this.btnOpcionMenu.Size = new System.Drawing.Size(232, 48);
+            this.btnOpcionMenu.TabIndex = 0;
+            this.btnOpcionMenu.Text = "Opción Ejemplo";
+            this.btnOpcionMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOpcionMenu.Textcolor = System.Drawing.Color.White;
+            this.btnOpcionMenu.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpcionMenu.Click += new System.EventHandler(this.btnOpcionMenu_Click);
             // 
             // bunifuSeparator1
             // 
@@ -243,14 +251,6 @@
             this.bunifuDragControl1.Horizontal = true;
             this.bunifuDragControl1.TargetControl = this.panelSuperior;
             this.bunifuDragControl1.Vertical = true;
-            // 
-            // panelForm
-            // 
-            this.panelForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(128)))));
-            this.panelForm.Location = new System.Drawing.Point(238, 106);
-            this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(949, 482);
-            this.panelForm.TabIndex = 3;
             // 
             // EjemploInterfazUsuario
             // 
@@ -288,11 +288,11 @@
         private Bunifu.Framework.UI.BunifuImageButton btnMinimizar;
         private Bunifu.Framework.UI.BunifuImageButton btnMaximizar;
         private Bunifu.Framework.UI.BunifuImageButton btnMenu;
-        private Bunifu.Framework.UI.BunifuFlatButton btnOpcion;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuImageButton btnRestaurar;
         private System.Windows.Forms.Panel panelBotones;
         private System.Windows.Forms.Panel panelForm;
+        private Bunifu.Framework.UI.BunifuFlatButton btnOpcionMenu;
     }
 }
 
