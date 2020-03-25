@@ -13,6 +13,10 @@ namespace archive_source
     public partial class EjemploInterfazUsuario : Form
     {
 
+        private const int sizePanelFormX = 951;
+        private const int sizePanelFormY = 482;
+        private const int locationPanelFormX = 236;
+        private const int locationPanelFormY = 136;
         private const int sizegrid = 10;
         private const int areamouse = 132;
         private const int botonizquierdo = 17;
@@ -29,6 +33,10 @@ namespace archive_source
             region.Exclude(rectangulogrid);
 
             panelPrincipal.Region = region;
+
+            panelForm.Width = ClientRectangle.Width - panelMenu.Width - 12;
+
+            panelForm.Height = ClientRectangle.Height - panelSuperior.Height - PanelInferior.Height - 12;
 
             Invalidate();
 

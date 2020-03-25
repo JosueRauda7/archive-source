@@ -31,34 +31,34 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EjemploInterfazUsuario));
             this.panelPrincipal = new System.Windows.Forms.Panel();
-            this.panelFormulario = new System.Windows.Forms.Panel();
             this.PanelInferior = new System.Windows.Forms.Panel();
             this.panelSuperior = new System.Windows.Forms.Panel();
-            this.btnRestaurar = new Bunifu.Framework.UI.BunifuImageButton();
+            this.panelBotones = new System.Windows.Forms.Panel();
+            this.btnCerrar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMinimizar = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnRestaurar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMaximizar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMenu = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnCerrar = new Bunifu.Framework.UI.BunifuImageButton();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnOpcion = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.panelBotones = new System.Windows.Forms.Panel();
+            this.panelForm = new System.Windows.Forms.Panel();
             this.panelPrincipal.SuspendLayout();
             this.panelSuperior.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
+            this.panelBotones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.panelMenu.SuspendLayout();
-            this.panelBotones.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelPrincipal
             // 
-            this.panelPrincipal.Controls.Add(this.panelFormulario);
+            this.panelPrincipal.Controls.Add(this.panelForm);
             this.panelPrincipal.Controls.Add(this.PanelInferior);
             this.panelPrincipal.Controls.Add(this.panelSuperior);
             this.panelPrincipal.Controls.Add(this.panelMenu);
@@ -69,22 +69,13 @@
             this.panelPrincipal.TabIndex = 0;
             this.panelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panelFormulario
-            // 
-            this.panelFormulario.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panelFormulario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(212)))), ((int)(((byte)(217)))));
-            this.panelFormulario.Location = new System.Drawing.Point(233, 106);
-            this.panelFormulario.Name = "panelFormulario";
-            this.panelFormulario.Size = new System.Drawing.Size(952, 488);
-            this.panelFormulario.TabIndex = 3;
-            // 
             // PanelInferior
             // 
             this.PanelInferior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(212)))), ((int)(((byte)(217)))));
             this.PanelInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.PanelInferior.Location = new System.Drawing.Point(230, 600);
+            this.PanelInferior.Location = new System.Drawing.Point(232, 594);
             this.PanelInferior.Name = "PanelInferior";
-            this.PanelInferior.Size = new System.Drawing.Size(970, 100);
+            this.PanelInferior.Size = new System.Drawing.Size(968, 106);
             this.PanelInferior.TabIndex = 2;
             // 
             // panelSuperior
@@ -93,10 +84,50 @@
             this.panelSuperior.Controls.Add(this.panelBotones);
             this.panelSuperior.Controls.Add(this.btnMenu);
             this.panelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSuperior.Location = new System.Drawing.Point(230, 0);
+            this.panelSuperior.Location = new System.Drawing.Point(232, 0);
             this.panelSuperior.Name = "panelSuperior";
-            this.panelSuperior.Size = new System.Drawing.Size(970, 100);
+            this.panelSuperior.Size = new System.Drawing.Size(968, 100);
             this.panelSuperior.TabIndex = 1;
+            // 
+            // panelBotones
+            // 
+            this.panelBotones.Controls.Add(this.btnCerrar);
+            this.panelBotones.Controls.Add(this.btnMinimizar);
+            this.panelBotones.Controls.Add(this.btnRestaurar);
+            this.panelBotones.Controls.Add(this.btnMaximizar);
+            this.panelBotones.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelBotones.Location = new System.Drawing.Point(687, 0);
+            this.panelBotones.Name = "panelBotones";
+            this.panelBotones.Size = new System.Drawing.Size(281, 100);
+            this.panelBotones.TabIndex = 6;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.ImageActive = null;
+            this.btnCerrar.Location = new System.Drawing.Point(197, 12);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(71, 67);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 0;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Zoom = 10;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
+            this.btnMinimizar.ImageActive = null;
+            this.btnMinimizar.Location = new System.Drawing.Point(13, 12);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(71, 67);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimizar.TabIndex = 2;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Zoom = 10;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnRestaurar
             // 
@@ -113,20 +144,6 @@
             this.btnRestaurar.Visible = false;
             this.btnRestaurar.Zoom = 10;
             this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.ImageActive = null;
-            this.btnMinimizar.Location = new System.Drawing.Point(13, 12);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(71, 67);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 2;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Zoom = 10;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnMaximizar
             // 
@@ -156,20 +173,6 @@
             this.btnMenu.TabStop = false;
             this.btnMenu.Zoom = 10;
             // 
-            // btnCerrar
-            // 
-            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.ImageActive = null;
-            this.btnCerrar.Location = new System.Drawing.Point(197, 12);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(71, 67);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 0;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Zoom = 10;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
@@ -178,7 +181,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(230, 700);
+            this.panelMenu.Size = new System.Drawing.Size(232, 700);
             this.panelMenu.TabIndex = 0;
             // 
             // btnOpcion
@@ -241,17 +244,13 @@
             this.bunifuDragControl1.TargetControl = this.panelSuperior;
             this.bunifuDragControl1.Vertical = true;
             // 
-            // panelBotones
+            // panelForm
             // 
-            this.panelBotones.Controls.Add(this.btnCerrar);
-            this.panelBotones.Controls.Add(this.btnMinimizar);
-            this.panelBotones.Controls.Add(this.btnRestaurar);
-            this.panelBotones.Controls.Add(this.btnMaximizar);
-            this.panelBotones.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelBotones.Location = new System.Drawing.Point(689, 0);
-            this.panelBotones.Name = "panelBotones";
-            this.panelBotones.Size = new System.Drawing.Size(281, 100);
-            this.panelBotones.TabIndex = 6;
+            this.panelForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(128)))));
+            this.panelForm.Location = new System.Drawing.Point(238, 106);
+            this.panelForm.Name = "panelForm";
+            this.panelForm.Size = new System.Drawing.Size(949, 482);
+            this.panelForm.TabIndex = 3;
             // 
             // EjemploInterfazUsuario
             // 
@@ -266,13 +265,13 @@
             this.Text = "Form1";
             this.panelPrincipal.ResumeLayout(false);
             this.panelSuperior.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
+            this.panelBotones.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.panelMenu.ResumeLayout(false);
-            this.panelBotones.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -280,7 +279,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panelPrincipal;
-        private System.Windows.Forms.Panel panelFormulario;
         private System.Windows.Forms.Panel PanelInferior;
         private System.Windows.Forms.Panel panelSuperior;
         private System.Windows.Forms.Panel panelMenu;
@@ -294,6 +292,7 @@
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuImageButton btnRestaurar;
         private System.Windows.Forms.Panel panelBotones;
+        private System.Windows.Forms.Panel panelForm;
     }
 }
 
