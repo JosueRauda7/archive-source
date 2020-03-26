@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>archive_source</RootNamespace>
     <AssemblyName>archive-source</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -37,6 +38,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\OneDrive\Escritorio\Universidad\Estudios\Ingeniería-DESKTOP-008CDNJ\Ciclo I\Programación Estructurada de Datos\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data, Version=8.0.17.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Bunifu\MySql.Data.DLL</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -51,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AgregarForm.cs" />
+    <Compile Include="Clases\Conexion.cs" />
     <Compile Include="EjemploInterfazUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
