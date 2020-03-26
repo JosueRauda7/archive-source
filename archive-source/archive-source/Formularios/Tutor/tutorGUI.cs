@@ -8,11 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace archive_source
+namespace archive_source.Formularios.Tutor
 {
-    public partial class EjemploInterfazUsuario : Form
+    public partial class tutorGUI : Form
     {
-
         private const int sizePanelFormX = 951;
         private const int sizePanelFormY = 482;
         private const int sizePanelMenuX = 232;
@@ -38,7 +37,7 @@ namespace archive_source
             panelForm.Width = ClientRectangle.Width - panelMenu.Width - 12;
 
             panelForm.Height = ClientRectangle.Height - panelSuperior.Height - PanelInferior.Height - 12;
-            
+
             if (btnRestaurar.Visible)
             {
                 btnRestaurar.Visible = false;
@@ -82,21 +81,49 @@ namespace archive_source
 
             ControlPaint.DrawSizeGrip(e.Graphics, Color.Transparent, rectangulogrid);
         }
-
-        public EjemploInterfazUsuario()
+        public tutorGUI()
         {
             InitializeComponent();
         }
 
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            if (menuContraido)
+            {
+                btnInicio.IconMarginRight = 0;
+                btnBeneficiarios.IconMarginRight = 0;
+                btnFamilias.IconMarginRight = 0;
+                btnHistorialMed.IconMarginRight = 0;
+                btnEstudios.IconMarginRight = 0;
+                btnMedicamentos.IconMarginRight = 0;
+                btnEscuelas.IconMarginRight = 0;
+                btnRegalos.IconMarginRight = 0;
+
+                panelMenu.Width = sizePanelMenuX;
+                panelForm.Left = panelMenu.Width + 3;
+                panelForm.Width = panelPrincipal.Width - panelMenu.Width - 12;
+                menuContraido = false;
+            }
+            else
+            {
+                btnInicio.IconMarginRight = 10;
+                btnBeneficiarios.IconMarginRight = 10;
+                btnFamilias.IconMarginRight = 10;
+                btnHistorialMed.IconMarginRight = 10;
+                btnEstudios.IconMarginRight = 10;
+                btnMedicamentos.IconMarginRight = 10;
+                btnEscuelas.IconMarginRight = 10;
+                btnRegalos.IconMarginRight = 10;
+
+                panelMenu.Width = sizePanelMenuX - 150;
+                panelForm.Left = panelMenu.Width + 3;
+                panelForm.Width = panelPrincipal.Width - panelMenu.Width - 12;
+                menuContraido = true;
+            }
+        }
+
         int locationX, locationY;
         int formWidth, formHeight;
-
-        private bool maximizado = false;
-
-        private void btnMinimizar_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
@@ -104,15 +131,6 @@ namespace archive_source
             {
                 Application.Exit();
             }
-        }
-
-        private void btnRestaurar_Click(object sender, EventArgs e)
-        {
-            Size = new Size(formWidth, formHeight);
-            Location = new Point(locationX, locationY);
-
-            btnRestaurar.Visible = false;
-            btnMaximizar.Visible = true;
         }
 
         private void btnMaximizar_Click(object sender, EventArgs e)
@@ -130,49 +148,18 @@ namespace archive_source
             btnRestaurar.Visible = true;
         }
 
-        private void btnMenu_Click(object sender, EventArgs e)
+        private void btnRestaurar_Click(object sender, EventArgs e)
         {
-            if(menuContraido)
-            {
-                btnOpcionMenu.IconMarginRight = 0;
-                panelMenu.Width = sizePanelMenuX;
-                panelForm.Left = panelMenu.Width + 3;
-                panelForm.Width = panelPrincipal.Width - panelMenu.Width - 12;
-                menuContraido = false;
-            }
-            else
-            {
-                btnOpcionMenu.IconMarginRight = 10;
-                panelMenu.Width = sizePanelMenuX - 150;
-                panelForm.Left = panelMenu.Width + 3;
-                panelForm.Width = panelPrincipal.Width - panelMenu.Width - 12;
-                menuContraido = true;
-            }
+            Size = new Size(formWidth, formHeight);
+            Location = new Point(locationX, locationY);
+
+            btnRestaurar.Visible = false;
+            btnMaximizar.Visible = true;
         }
 
-        private void btnAdmin_Click(object sender, EventArgs e)
+        private void btnMinimizar_Click(object sender, EventArgs e)
         {
-            Formularios.Administrador.administradorGUI formAdmin = new Formularios.Administrador.administradorGUI();
-            formAdmin.Show();
-            this.Hide();
-        }
-
-        private void btnTutor_Click(object sender, EventArgs e)
-        {
-            Formularios.Tutor.tutorGUI formTutor = new Formularios.Tutor.tutorGUI();
-            formTutor.Show();
-            this.Hide();
-        }
-
-        private void btnOpcionMenu_Click(object sender, EventArgs e)
-        {
-            AgregarForm agregarForm = new AgregarForm();
-            agregarForm.abrirFormulario<FrmOpcionEjemplo>(panelForm);
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

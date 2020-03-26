@@ -45,6 +45,8 @@
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.btnAdmin = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnTutor = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panelPrincipal.SuspendLayout();
             this.panelSuperior.SuspendLayout();
             this.panelBotones.SuspendLayout();
@@ -185,6 +187,8 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
+            this.panelMenu.Controls.Add(this.btnTutor);
+            this.panelMenu.Controls.Add(this.btnAdmin);
             this.panelMenu.Controls.Add(this.btnOpcionMenu);
             this.panelMenu.Controls.Add(this.bunifuSeparator1);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -252,6 +256,76 @@
             this.bunifuDragControl1.TargetControl = this.panelSuperior;
             this.bunifuDragControl1.Vertical = true;
             // 
+            // btnAdmin
+            // 
+            this.btnAdmin.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdmin.BorderRadius = 0;
+            this.btnAdmin.ButtonText = "GUI Admin";
+            this.btnAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdmin.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAdmin.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnAdmin.Iconimage = global::archive_source.Properties.Resources.guardar;
+            this.btnAdmin.Iconimage_right = null;
+            this.btnAdmin.Iconimage_right_Selected = null;
+            this.btnAdmin.Iconimage_Selected = null;
+            this.btnAdmin.IconMarginLeft = 20;
+            this.btnAdmin.IconMarginRight = 0;
+            this.btnAdmin.IconRightVisible = true;
+            this.btnAdmin.IconRightZoom = 0D;
+            this.btnAdmin.IconVisible = true;
+            this.btnAdmin.IconZoom = 90D;
+            this.btnAdmin.IsTab = false;
+            this.btnAdmin.Location = new System.Drawing.Point(0, 257);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnAdmin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnAdmin.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnAdmin.selected = false;
+            this.btnAdmin.Size = new System.Drawing.Size(232, 48);
+            this.btnAdmin.TabIndex = 1;
+            this.btnAdmin.Text = "GUI Admin";
+            this.btnAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdmin.Textcolor = System.Drawing.Color.White;
+            this.btnAdmin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
+            // 
+            // btnTutor
+            // 
+            this.btnTutor.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnTutor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnTutor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTutor.BorderRadius = 0;
+            this.btnTutor.ButtonText = "GUI Tutor";
+            this.btnTutor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTutor.DisabledColor = System.Drawing.Color.Gray;
+            this.btnTutor.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnTutor.Iconimage = global::archive_source.Properties.Resources.guardar;
+            this.btnTutor.Iconimage_right = null;
+            this.btnTutor.Iconimage_right_Selected = null;
+            this.btnTutor.Iconimage_Selected = null;
+            this.btnTutor.IconMarginLeft = 20;
+            this.btnTutor.IconMarginRight = 0;
+            this.btnTutor.IconRightVisible = true;
+            this.btnTutor.IconRightZoom = 0D;
+            this.btnTutor.IconVisible = true;
+            this.btnTutor.IconZoom = 90D;
+            this.btnTutor.IsTab = false;
+            this.btnTutor.Location = new System.Drawing.Point(0, 326);
+            this.btnTutor.Name = "btnTutor";
+            this.btnTutor.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnTutor.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnTutor.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnTutor.selected = false;
+            this.btnTutor.Size = new System.Drawing.Size(232, 48);
+            this.btnTutor.TabIndex = 2;
+            this.btnTutor.Text = "GUI Tutor";
+            this.btnTutor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTutor.Textcolor = System.Drawing.Color.White;
+            this.btnTutor.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTutor.Click += new System.EventHandler(this.btnTutor_Click);
+            // 
             // EjemploInterfazUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -293,6 +367,8 @@
         private System.Windows.Forms.Panel panelBotones;
         private System.Windows.Forms.Panel panelForm;
         private Bunifu.Framework.UI.BunifuFlatButton btnOpcionMenu;
+        private Bunifu.Framework.UI.BunifuFlatButton btnTutor;
+        private Bunifu.Framework.UI.BunifuFlatButton btnAdmin;
     }
 }
 

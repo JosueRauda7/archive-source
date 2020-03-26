@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace archive_source
+namespace archive_source.Formularios.Administrador
 {
-    public partial class EjemploInterfazUsuario : Form
+    public partial class administradorGUI : Form
     {
 
         private const int sizePanelFormX = 951;
@@ -38,7 +38,7 @@ namespace archive_source
             panelForm.Width = ClientRectangle.Width - panelMenu.Width - 12;
 
             panelForm.Height = ClientRectangle.Height - panelSuperior.Height - PanelInferior.Height - 12;
-            
+
             if (btnRestaurar.Visible)
             {
                 btnRestaurar.Visible = false;
@@ -83,20 +83,43 @@ namespace archive_source
             ControlPaint.DrawSizeGrip(e.Graphics, Color.Transparent, rectangulogrid);
         }
 
-        public EjemploInterfazUsuario()
+        public administradorGUI()
         {
             InitializeComponent();
         }
 
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            if (menuContraido)
+            {
+                btnInicio.IconMarginRight = 0;
+                btnTutores.IconMarginRight = 0;
+                btnAdministradores.IconMarginRight = 0;
+                btnRangos.IconMarginRight = 0;
+                btnRegalos.IconMarginRight = 0;
+
+                panelMenu.Width = sizePanelMenuX;
+                panelForm.Left = panelMenu.Width + 3;
+                panelForm.Width = panelPrincipal.Width - panelMenu.Width - 12;
+                menuContraido = false;
+            }
+            else
+            {
+                btnInicio.IconMarginRight = 10;
+                btnTutores.IconMarginRight = 10;
+                btnAdministradores.IconMarginRight = 10;
+                btnRangos.IconMarginRight = 10;
+                btnRegalos.IconMarginRight = 10;
+
+                panelMenu.Width = sizePanelMenuX - 150;
+                panelForm.Left = panelMenu.Width + 3;
+                panelForm.Width = panelPrincipal.Width - panelMenu.Width - 12;
+                menuContraido = true;
+            }
+        }
+
         int locationX, locationY;
         int formWidth, formHeight;
-
-        private bool maximizado = false;
-
-        private void btnMinimizar_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
@@ -104,15 +127,6 @@ namespace archive_source
             {
                 Application.Exit();
             }
-        }
-
-        private void btnRestaurar_Click(object sender, EventArgs e)
-        {
-            Size = new Size(formWidth, formHeight);
-            Location = new Point(locationX, locationY);
-
-            btnRestaurar.Visible = false;
-            btnMaximizar.Visible = true;
         }
 
         private void btnMaximizar_Click(object sender, EventArgs e)
@@ -130,49 +144,18 @@ namespace archive_source
             btnRestaurar.Visible = true;
         }
 
-        private void btnMenu_Click(object sender, EventArgs e)
+        private void btnRestaurar_Click(object sender, EventArgs e)
         {
-            if(menuContraido)
-            {
-                btnOpcionMenu.IconMarginRight = 0;
-                panelMenu.Width = sizePanelMenuX;
-                panelForm.Left = panelMenu.Width + 3;
-                panelForm.Width = panelPrincipal.Width - panelMenu.Width - 12;
-                menuContraido = false;
-            }
-            else
-            {
-                btnOpcionMenu.IconMarginRight = 10;
-                panelMenu.Width = sizePanelMenuX - 150;
-                panelForm.Left = panelMenu.Width + 3;
-                panelForm.Width = panelPrincipal.Width - panelMenu.Width - 12;
-                menuContraido = true;
-            }
+            Size = new Size(formWidth, formHeight);
+            Location = new Point(locationX, locationY);
+
+            btnRestaurar.Visible = false;
+            btnMaximizar.Visible = true;
         }
 
-        private void btnAdmin_Click(object sender, EventArgs e)
+        private void btnMinimizar_Click(object sender, EventArgs e)
         {
-            Formularios.Administrador.administradorGUI formAdmin = new Formularios.Administrador.administradorGUI();
-            formAdmin.Show();
-            this.Hide();
-        }
-
-        private void btnTutor_Click(object sender, EventArgs e)
-        {
-            Formularios.Tutor.tutorGUI formTutor = new Formularios.Tutor.tutorGUI();
-            formTutor.Show();
-            this.Hide();
-        }
-
-        private void btnOpcionMenu_Click(object sender, EventArgs e)
-        {
-            AgregarForm agregarForm = new AgregarForm();
-            agregarForm.abrirFormulario<FrmOpcionEjemplo>(panelForm);
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

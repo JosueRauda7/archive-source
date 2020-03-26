@@ -57,6 +57,18 @@
     <Compile Include="EjemploInterfazUsuario.Designer.cs">
       <DependentUpon>EjemploInterfazUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Administrador\administradorGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\administradorGUI.Designer.cs">
+      <DependentUpon>administradorGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\tutorGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\tutorGUI.Designer.cs">
+      <DependentUpon>tutorGUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmOpcionEjemplo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +85,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EjemploInterfazUsuario.resx">
       <DependentUpon>EjemploInterfazUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\administradorGUI.resx">
+      <DependentUpon>administradorGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\tutorGUI.resx">
+      <DependentUpon>tutorGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOpcionEjemplo.resx">
       <DependentUpon>FrmOpcionEjemplo.cs</DependentUpon>

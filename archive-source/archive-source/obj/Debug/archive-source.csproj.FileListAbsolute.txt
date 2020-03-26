@@ -11,3 +11,5 @@ C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debu
 C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.EjemploInterfazUsuario.resources
 C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.FrmOpcionEjemplo.resources
 C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.OtroFormEjemplo.resources
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.administradorGUI.resources
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.tutorGUI.resources
