@@ -41,15 +41,23 @@
             this.btnMaximizar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMenu = new Bunifu.Framework.UI.BunifuImageButton();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnInicio = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnRangos = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.btnInicio = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnRegalos = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnTutores = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAdministradores = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnRangos = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnRegalos = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.panelInicio = new System.Windows.Forms.Panel();
+            this.panelControl = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnAbritTutor = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnAbrirRegalo = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnAbrirRango = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnAbrirAdmin = new Bunifu.Framework.UI.BunifuTileButton();
+            this.Bienvenida = new System.Windows.Forms.Label();
             this.panelPrincipal.SuspendLayout();
+            this.panelForm.SuspendLayout();
             this.panelSuperior.SuspendLayout();
             this.panelBotones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
@@ -58,6 +66,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.panelMenu.SuspendLayout();
+            this.panelInicio.SuspendLayout();
+            this.panelControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelPrincipal
@@ -75,9 +85,10 @@
             // panelForm
             // 
             this.panelForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(128)))));
+            this.panelForm.Controls.Add(this.panelInicio);
             this.panelForm.Location = new System.Drawing.Point(238, 106);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(949, 482);
+            this.panelForm.Size = new System.Drawing.Size(934, 482);
             this.panelForm.TabIndex = 3;
             // 
             // PanelInferior
@@ -200,123 +211,6 @@
             this.panelMenu.Size = new System.Drawing.Size(232, 700);
             this.panelMenu.TabIndex = 0;
             // 
-            // btnInicio
-            // 
-            this.btnInicio.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnInicio.BorderRadius = 0;
-            this.btnInicio.ButtonText = "INICIO";
-            this.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInicio.DisabledColor = System.Drawing.Color.Gray;
-            this.btnInicio.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnInicio.Iconimage = global::archive_source.Properties.Resources.guardar;
-            this.btnInicio.Iconimage_right = null;
-            this.btnInicio.Iconimage_right_Selected = null;
-            this.btnInicio.Iconimage_Selected = null;
-            this.btnInicio.IconMarginLeft = 20;
-            this.btnInicio.IconMarginRight = 0;
-            this.btnInicio.IconRightVisible = true;
-            this.btnInicio.IconRightZoom = 0D;
-            this.btnInicio.IconVisible = true;
-            this.btnInicio.IconZoom = 90D;
-            this.btnInicio.IsTab = false;
-            this.btnInicio.Location = new System.Drawing.Point(3, 157);
-            this.btnInicio.Margin = new System.Windows.Forms.Padding(0);
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnInicio.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnInicio.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnInicio.selected = false;
-            this.btnInicio.Size = new System.Drawing.Size(232, 67);
-            this.btnInicio.TabIndex = 0;
-            this.btnInicio.Text = "INICIO";
-            this.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInicio.Textcolor = System.Drawing.Color.White;
-            this.btnInicio.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // bunifuSeparator1
-            // 
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(26, 133);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(172, 8);
-            this.bunifuSeparator1.TabIndex = 0;
-            this.bunifuSeparator1.Transparency = 255;
-            this.bunifuSeparator1.Vertical = false;
-            // 
-            // btnTutores
-            // 
-            this.btnTutores.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnTutores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
-            this.btnTutores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTutores.BorderRadius = 0;
-            this.btnTutores.ButtonText = "TUTORES";
-            this.btnTutores.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTutores.DisabledColor = System.Drawing.Color.Gray;
-            this.btnTutores.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnTutores.Iconimage = global::archive_source.Properties.Resources.guardar;
-            this.btnTutores.Iconimage_right = null;
-            this.btnTutores.Iconimage_right_Selected = null;
-            this.btnTutores.Iconimage_Selected = null;
-            this.btnTutores.IconMarginLeft = 20;
-            this.btnTutores.IconMarginRight = 0;
-            this.btnTutores.IconRightVisible = true;
-            this.btnTutores.IconRightZoom = 0D;
-            this.btnTutores.IconVisible = true;
-            this.btnTutores.IconZoom = 90D;
-            this.btnTutores.IsTab = false;
-            this.btnTutores.Location = new System.Drawing.Point(3, 224);
-            this.btnTutores.Margin = new System.Windows.Forms.Padding(0);
-            this.btnTutores.Name = "btnTutores";
-            this.btnTutores.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
-            this.btnTutores.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnTutores.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnTutores.selected = false;
-            this.btnTutores.Size = new System.Drawing.Size(232, 67);
-            this.btnTutores.TabIndex = 1;
-            this.btnTutores.Text = "TUTORES";
-            this.btnTutores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTutores.Textcolor = System.Drawing.Color.White;
-            this.btnTutores.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnAdministradores
-            // 
-            this.btnAdministradores.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAdministradores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
-            this.btnAdministradores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdministradores.BorderRadius = 0;
-            this.btnAdministradores.ButtonText = "ADMINISTRADORES";
-            this.btnAdministradores.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdministradores.DisabledColor = System.Drawing.Color.Gray;
-            this.btnAdministradores.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnAdministradores.Iconimage = global::archive_source.Properties.Resources.guardar;
-            this.btnAdministradores.Iconimage_right = null;
-            this.btnAdministradores.Iconimage_right_Selected = null;
-            this.btnAdministradores.Iconimage_Selected = null;
-            this.btnAdministradores.IconMarginLeft = 20;
-            this.btnAdministradores.IconMarginRight = 0;
-            this.btnAdministradores.IconRightVisible = true;
-            this.btnAdministradores.IconRightZoom = 0D;
-            this.btnAdministradores.IconVisible = true;
-            this.btnAdministradores.IconZoom = 90D;
-            this.btnAdministradores.IsTab = false;
-            this.btnAdministradores.Location = new System.Drawing.Point(3, 291);
-            this.btnAdministradores.Margin = new System.Windows.Forms.Padding(0);
-            this.btnAdministradores.Name = "btnAdministradores";
-            this.btnAdministradores.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
-            this.btnAdministradores.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAdministradores.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnAdministradores.selected = false;
-            this.btnAdministradores.Size = new System.Drawing.Size(232, 67);
-            this.btnAdministradores.TabIndex = 2;
-            this.btnAdministradores.Text = "ADMINISTRADORES";
-            this.btnAdministradores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdministradores.Textcolor = System.Drawing.Color.White;
-            this.btnAdministradores.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
             // btnRangos
             // 
             this.btnRangos.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
@@ -351,6 +245,55 @@
             this.btnRangos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRangos.Textcolor = System.Drawing.Color.White;
             this.btnRangos.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRangos.Click += new System.EventHandler(this.btnRangos_Click);
+            // 
+            // bunifuSeparator1
+            // 
+            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator1.LineThickness = 1;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(26, 133);
+            this.bunifuSeparator1.Name = "bunifuSeparator1";
+            this.bunifuSeparator1.Size = new System.Drawing.Size(172, 8);
+            this.bunifuSeparator1.TabIndex = 0;
+            this.bunifuSeparator1.Transparency = 255;
+            this.bunifuSeparator1.Vertical = false;
+            // 
+            // btnInicio
+            // 
+            this.btnInicio.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnInicio.BorderRadius = 0;
+            this.btnInicio.ButtonText = "INICIO";
+            this.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInicio.DisabledColor = System.Drawing.Color.Gray;
+            this.btnInicio.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnInicio.Iconimage = global::archive_source.Properties.Resources.guardar;
+            this.btnInicio.Iconimage_right = null;
+            this.btnInicio.Iconimage_right_Selected = null;
+            this.btnInicio.Iconimage_Selected = null;
+            this.btnInicio.IconMarginLeft = 20;
+            this.btnInicio.IconMarginRight = 0;
+            this.btnInicio.IconRightVisible = true;
+            this.btnInicio.IconRightZoom = 0D;
+            this.btnInicio.IconVisible = true;
+            this.btnInicio.IconZoom = 90D;
+            this.btnInicio.IsTab = false;
+            this.btnInicio.Location = new System.Drawing.Point(3, 157);
+            this.btnInicio.Margin = new System.Windows.Forms.Padding(0);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnInicio.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnInicio.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnInicio.selected = false;
+            this.btnInicio.Size = new System.Drawing.Size(232, 67);
+            this.btnInicio.TabIndex = 0;
+            this.btnInicio.Text = "INICIO";
+            this.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInicio.Textcolor = System.Drawing.Color.White;
+            this.btnInicio.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
             // btnRegalos
             // 
@@ -386,6 +329,79 @@
             this.btnRegalos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegalos.Textcolor = System.Drawing.Color.White;
             this.btnRegalos.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegalos.Click += new System.EventHandler(this.btnRegalos_Click);
+            // 
+            // btnTutores
+            // 
+            this.btnTutores.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnTutores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnTutores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTutores.BorderRadius = 0;
+            this.btnTutores.ButtonText = "TUTORES";
+            this.btnTutores.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTutores.DisabledColor = System.Drawing.Color.Gray;
+            this.btnTutores.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnTutores.Iconimage = global::archive_source.Properties.Resources.guardar;
+            this.btnTutores.Iconimage_right = null;
+            this.btnTutores.Iconimage_right_Selected = null;
+            this.btnTutores.Iconimage_Selected = null;
+            this.btnTutores.IconMarginLeft = 20;
+            this.btnTutores.IconMarginRight = 0;
+            this.btnTutores.IconRightVisible = true;
+            this.btnTutores.IconRightZoom = 0D;
+            this.btnTutores.IconVisible = true;
+            this.btnTutores.IconZoom = 90D;
+            this.btnTutores.IsTab = false;
+            this.btnTutores.Location = new System.Drawing.Point(3, 224);
+            this.btnTutores.Margin = new System.Windows.Forms.Padding(0);
+            this.btnTutores.Name = "btnTutores";
+            this.btnTutores.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnTutores.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnTutores.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnTutores.selected = false;
+            this.btnTutores.Size = new System.Drawing.Size(232, 67);
+            this.btnTutores.TabIndex = 1;
+            this.btnTutores.Text = "TUTORES";
+            this.btnTutores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTutores.Textcolor = System.Drawing.Color.White;
+            this.btnTutores.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTutores.Click += new System.EventHandler(this.btnTutores_Click);
+            // 
+            // btnAdministradores
+            // 
+            this.btnAdministradores.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAdministradores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnAdministradores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdministradores.BorderRadius = 0;
+            this.btnAdministradores.ButtonText = "ADMINISTRADORES";
+            this.btnAdministradores.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdministradores.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAdministradores.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnAdministradores.Iconimage = global::archive_source.Properties.Resources.guardar;
+            this.btnAdministradores.Iconimage_right = null;
+            this.btnAdministradores.Iconimage_right_Selected = null;
+            this.btnAdministradores.Iconimage_Selected = null;
+            this.btnAdministradores.IconMarginLeft = 20;
+            this.btnAdministradores.IconMarginRight = 0;
+            this.btnAdministradores.IconRightVisible = true;
+            this.btnAdministradores.IconRightZoom = 0D;
+            this.btnAdministradores.IconVisible = true;
+            this.btnAdministradores.IconZoom = 90D;
+            this.btnAdministradores.IsTab = false;
+            this.btnAdministradores.Location = new System.Drawing.Point(3, 291);
+            this.btnAdministradores.Margin = new System.Windows.Forms.Padding(0);
+            this.btnAdministradores.Name = "btnAdministradores";
+            this.btnAdministradores.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnAdministradores.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAdministradores.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnAdministradores.selected = false;
+            this.btnAdministradores.Size = new System.Drawing.Size(232, 67);
+            this.btnAdministradores.TabIndex = 2;
+            this.btnAdministradores.Text = "ADMINISTRADORES";
+            this.btnAdministradores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdministradores.Textcolor = System.Drawing.Color.White;
+            this.btnAdministradores.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdministradores.Click += new System.EventHandler(this.btnAdministradores_Click);
             // 
             // bunifuElipse1
             // 
@@ -399,6 +415,121 @@
             this.bunifuDragControl1.TargetControl = this.panelSuperior;
             this.bunifuDragControl1.Vertical = true;
             // 
+            // panelInicio
+            // 
+            this.panelInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(128)))));
+            this.panelInicio.Controls.Add(this.panelControl);
+            this.panelInicio.Controls.Add(this.Bienvenida);
+            this.panelInicio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelInicio.Location = new System.Drawing.Point(0, 0);
+            this.panelInicio.Name = "panelInicio";
+            this.panelInicio.Size = new System.Drawing.Size(934, 482);
+            this.panelInicio.TabIndex = 6;
+            // 
+            // panelControl
+            // 
+            this.panelControl.Controls.Add(this.btnAbritTutor);
+            this.panelControl.Controls.Add(this.btnAbrirAdmin);
+            this.panelControl.Controls.Add(this.btnAbrirRango);
+            this.panelControl.Controls.Add(this.btnAbrirRegalo);
+            this.panelControl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControl.Location = new System.Drawing.Point(0, 140);
+            this.panelControl.Name = "panelControl";
+            this.panelControl.Padding = new System.Windows.Forms.Padding(119, 0, 119, 0);
+            this.panelControl.Size = new System.Drawing.Size(934, 342);
+            this.panelControl.TabIndex = 15;
+            // 
+            // btnAbritTutor
+            // 
+            this.btnAbritTutor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbritTutor.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbritTutor.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnAbritTutor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbritTutor.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.btnAbritTutor.ForeColor = System.Drawing.Color.White;
+            this.btnAbritTutor.Image = ((System.Drawing.Image)(resources.GetObject("btnAbritTutor.Image")));
+            this.btnAbritTutor.ImagePosition = 20;
+            this.btnAbritTutor.ImageZoom = 50;
+            this.btnAbritTutor.LabelPosition = 41;
+            this.btnAbritTutor.LabelText = "TUTORES";
+            this.btnAbritTutor.Location = new System.Drawing.Point(125, 6);
+            this.btnAbritTutor.Margin = new System.Windows.Forms.Padding(6);
+            this.btnAbritTutor.Name = "btnAbritTutor";
+            this.btnAbritTutor.Size = new System.Drawing.Size(156, 145);
+            this.btnAbritTutor.TabIndex = 15;
+            this.btnAbritTutor.Click += new System.EventHandler(this.btnAbritTutor_Click);
+            // 
+            // btnAbrirRegalo
+            // 
+            this.btnAbrirRegalo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirRegalo.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirRegalo.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnAbrirRegalo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbrirRegalo.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.btnAbrirRegalo.ForeColor = System.Drawing.Color.White;
+            this.btnAbrirRegalo.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirRegalo.Image")));
+            this.btnAbrirRegalo.ImagePosition = 18;
+            this.btnAbrirRegalo.ImageZoom = 50;
+            this.btnAbrirRegalo.LabelPosition = 36;
+            this.btnAbrirRegalo.LabelText = "TIPOS REGALOS";
+            this.btnAbrirRegalo.Location = new System.Drawing.Point(616, 5);
+            this.btnAbrirRegalo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnAbrirRegalo.Name = "btnAbrirRegalo";
+            this.btnAbrirRegalo.Size = new System.Drawing.Size(150, 146);
+            this.btnAbrirRegalo.TabIndex = 18;
+            this.btnAbrirRegalo.Click += new System.EventHandler(this.btnAbrirRegalo_Click);
+            // 
+            // btnAbrirRango
+            // 
+            this.btnAbrirRango.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirRango.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirRango.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnAbrirRango.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbrirRango.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btnAbrirRango.ForeColor = System.Drawing.Color.White;
+            this.btnAbrirRango.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirRango.Image")));
+            this.btnAbrirRango.ImagePosition = 14;
+            this.btnAbrirRango.ImageZoom = 50;
+            this.btnAbrirRango.LabelPosition = 29;
+            this.btnAbrirRango.LabelText = "RANGOS TUTORES";
+            this.btnAbrirRango.Location = new System.Drawing.Point(451, 4);
+            this.btnAbrirRango.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAbrirRango.Name = "btnAbrirRango";
+            this.btnAbrirRango.Size = new System.Drawing.Size(156, 146);
+            this.btnAbrirRango.TabIndex = 17;
+            this.btnAbrirRango.Click += new System.EventHandler(this.btnAbrirRango_Click);
+            // 
+            // btnAbrirAdmin
+            // 
+            this.btnAbrirAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirAdmin.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirAdmin.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnAbrirAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbrirAdmin.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.btnAbrirAdmin.ForeColor = System.Drawing.Color.White;
+            this.btnAbrirAdmin.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirAdmin.Image")));
+            this.btnAbrirAdmin.ImagePosition = 15;
+            this.btnAbrirAdmin.ImageZoom = 50;
+            this.btnAbrirAdmin.LabelPosition = 29;
+            this.btnAbrirAdmin.LabelText = "ADMINISTRADORES";
+            this.btnAbrirAdmin.Location = new System.Drawing.Point(292, 5);
+            this.btnAbrirAdmin.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAbrirAdmin.Name = "btnAbrirAdmin";
+            this.btnAbrirAdmin.Size = new System.Drawing.Size(150, 145);
+            this.btnAbrirAdmin.TabIndex = 16;
+            this.btnAbrirAdmin.Click += new System.EventHandler(this.btnAbrirAdmin_Click);
+            // 
+            // Bienvenida
+            // 
+            this.Bienvenida.AutoSize = true;
+            this.Bienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bienvenida.ForeColor = System.Drawing.Color.White;
+            this.Bienvenida.Location = new System.Drawing.Point(26, 26);
+            this.Bienvenida.Name = "Bienvenida";
+            this.Bienvenida.Size = new System.Drawing.Size(547, 63);
+            this.Bienvenida.TabIndex = 10;
+            this.Bienvenida.Text = "Bienvenido [Usuario]";
+            // 
             // administradorGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -410,6 +541,7 @@
             this.Name = "administradorGUI";
             this.Text = "administradorGUI";
             this.panelPrincipal.ResumeLayout(false);
+            this.panelForm.ResumeLayout(false);
             this.panelSuperior.ResumeLayout(false);
             this.panelBotones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
@@ -418,6 +550,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
             this.panelMenu.ResumeLayout(false);
+            this.panelInicio.ResumeLayout(false);
+            this.panelInicio.PerformLayout();
+            this.panelControl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -443,5 +578,12 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnAdministradores;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private System.Windows.Forms.Panel panelInicio;
+        private System.Windows.Forms.FlowLayoutPanel panelControl;
+        private Bunifu.Framework.UI.BunifuTileButton btnAbritTutor;
+        private Bunifu.Framework.UI.BunifuTileButton btnAbrirRegalo;
+        private Bunifu.Framework.UI.BunifuTileButton btnAbrirRango;
+        private Bunifu.Framework.UI.BunifuTileButton btnAbrirAdmin;
+        private System.Windows.Forms.Label Bienvenida;
     }
 }

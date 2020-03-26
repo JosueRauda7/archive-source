@@ -21,6 +21,8 @@ namespace archive_source.Formularios.Tutor
         private const int botonizquierdo = 17;
         private Rectangle rectangulogrid;
         private bool menuContraido = false;
+        private Color colorSeleccionado;
+        private Color colorNoSeleccionado;
 
         protected override void OnSizeChanged(EventArgs e)
         {
@@ -81,9 +83,25 @@ namespace archive_source.Formularios.Tutor
 
             ControlPaint.DrawSizeGrip(e.Graphics, Color.Transparent, rectangulogrid);
         }
+
+        private void cambiarColoresBotones(Color color)
+        {
+            btnInicio.Normalcolor = color;
+            btnBeneficiarios.Normalcolor = color;
+            btnFamilias.Normalcolor = color;
+            btnHistorialMed.Normalcolor = color;
+            btnEstudios.Normalcolor = color;
+            btnMedicamentos.Normalcolor = color;
+            btnEscuelas.Normalcolor = color;
+            btnRegalos.Normalcolor = color;
+        }
+
         public tutorGUI()
         {
             InitializeComponent();
+            colorSeleccionado = btnInicio.BackColor;
+            colorNoSeleccionado = btnBeneficiarios.BackColor;
+            panelInicio.BringToFront();
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -160,6 +178,191 @@ namespace archive_source.Formularios.Tutor
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            if (btnInicio.Normalcolor != colorSeleccionado)
+            {
+                cambiarColoresBotones(colorNoSeleccionado);
+                btnInicio.Normalcolor = colorSeleccionado;
+            }
+            panelInicio.BringToFront();
+        }
+
+        //Función llamar form beneficiarios
+        private void verBeneficiarios()
+        {
+            if (btnBeneficiarios.Normalcolor != colorSeleccionado)
+            {
+                cambiarColoresBotones(colorNoSeleccionado);
+                btnBeneficiarios.Normalcolor = colorSeleccionado;
+            }
+            //Agregar formulario aquí
+            /*
+             AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
+             */
+        }
+
+        private void btnBeneficiarios_Click(object sender, EventArgs e)
+        {
+            verBeneficiarios();
+        }
+
+        private void btnAbrirBeneficiarios_Click(object sender, EventArgs e)
+        {
+            verBeneficiarios();
+        }
+
+        //Función llamar form familias
+        private void verFamilias()
+        {
+            if (btnFamilias.Normalcolor != colorSeleccionado)
+            {
+                cambiarColoresBotones(colorNoSeleccionado);
+                btnFamilias.Normalcolor = colorSeleccionado;
+            }
+            //Agregar formulario aquí
+            /*
+             AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
+             */
+        }
+
+        private void btnFamilias_Click(object sender, EventArgs e)
+        {
+            verFamilias();
+        }
+
+        private void btnAbrirFamilias_Click(object sender, EventArgs e)
+        {
+            verFamilias();
+        }
+
+        //Función llamar form historiales médicos
+        private void verHistorialesMed()
+        {
+            if (btnHistorialMed.Normalcolor != colorSeleccionado)
+            {
+                cambiarColoresBotones(colorNoSeleccionado);
+                btnHistorialMed.Normalcolor = colorSeleccionado;
+            }
+            //Agregar formulario aquí
+            /*
+             AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
+             */
+        }
+
+        private void btnHistorialMed_Click(object sender, EventArgs e)
+        {
+            verHistorialesMed();
+        }
+
+        private void btnAbrirHMed_Click(object sender, EventArgs e)
+        {
+            verHistorialesMed();
+        }
+
+        //Función llamar form estudios
+        private void verEstudios()
+        {
+            if (btnEstudios.Normalcolor != colorSeleccionado)
+            {
+                cambiarColoresBotones(colorNoSeleccionado);
+                btnEstudios.Normalcolor = colorSeleccionado;
+            }
+            //Agregar formulario aquí
+            /*
+             AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
+             */
+        }
+
+        private void btnEstudios_Click(object sender, EventArgs e)
+        {
+            verEstudios();
+        }
+
+        private void btnAbrirEstudios_Click(object sender, EventArgs e)
+        {
+            verEstudios();
+        }
+
+        //Función llamar form Medicamentos
+        private void verMedicamentos()
+        {
+            if (btnMedicamentos.Normalcolor != colorSeleccionado)
+            {
+                cambiarColoresBotones(colorNoSeleccionado);
+                btnMedicamentos.Normalcolor = colorSeleccionado;
+            }
+            //Agregar formulario aquí
+            /*
+             AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
+             */
+        }
+
+        private void btnMedicamentos_Click(object sender, EventArgs e)
+        {
+            verMedicamentos();
+        }
+
+        private void btnAbrirMed_Click(object sender, EventArgs e)
+        {
+            verMedicamentos();
+        }
+
+        //Función llamar form escuelas
+        private void verEscuelas()
+        {
+            if (btnEscuelas.Normalcolor != colorSeleccionado)
+            {
+                cambiarColoresBotones(colorNoSeleccionado);
+                btnEscuelas.Normalcolor = colorSeleccionado;
+            }
+            //Agregar formulario aquí
+            /*
+             AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
+             */
+        }
+
+        private void btnEscuelas_Click(object sender, EventArgs e)
+        {
+            verEscuelas();
+        }
+
+        private void btnAbrirEscuelas_Click(object sender, EventArgs e)
+        {
+            verEscuelas();
+        }
+
+        //Función llamar regalos
+        private void verRegalos()
+        {
+            if (btnRegalos.Normalcolor != colorSeleccionado)
+            {
+                cambiarColoresBotones(colorNoSeleccionado);
+                btnRegalos.Normalcolor = colorSeleccionado;
+            }
+            //Agregar formulario aquí
+            /*
+             AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
+             */
+        }
+
+        private void btnRegalos_Click(object sender, EventArgs e)
+        {
+            verRegalos();
+        }
+
+        private void btnAbrirRegalos_Click(object sender, EventArgs e)
+        {
+            verRegalos();
         }
     }
 }

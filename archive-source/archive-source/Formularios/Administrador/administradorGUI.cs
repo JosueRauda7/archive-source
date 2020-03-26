@@ -22,6 +22,8 @@ namespace archive_source.Formularios.Administrador
         private const int botonizquierdo = 17;
         private Rectangle rectangulogrid;
         private bool menuContraido = false;
+        private Color colorSeleccionado;
+        private Color colorNoSeleccionado;
 
         protected override void OnSizeChanged(EventArgs e)
         {
@@ -35,9 +37,9 @@ namespace archive_source.Formularios.Administrador
 
             panelPrincipal.Region = region;
 
-            panelForm.Width = ClientRectangle.Width - panelMenu.Width - 12;
+            panelInicio.Width = panelForm.Width = ClientRectangle.Width - panelMenu.Width - 12;
 
-            panelForm.Height = ClientRectangle.Height - panelSuperior.Height - PanelInferior.Height - 12;
+            panelInicio.Height = panelForm.Height = ClientRectangle.Height - panelSuperior.Height - PanelInferior.Height - 12;
 
             if (btnRestaurar.Visible)
             {
@@ -83,9 +85,22 @@ namespace archive_source.Formularios.Administrador
             ControlPaint.DrawSizeGrip(e.Graphics, Color.Transparent, rectangulogrid);
         }
 
+        private void cambiarColoresBotones(Color color)
+        {
+            btnInicio.Normalcolor = color;
+            btnTutores.Normalcolor = color;
+            btnAdministradores.Normalcolor = color;
+            btnRangos.Normalcolor = color;
+            btnRegalos.Normalcolor = color;
+
+        }
+
         public administradorGUI()
         {
             InitializeComponent();
+            colorSeleccionado = btnInicio.BackColor;
+            colorNoSeleccionado = btnAdministradores.BackColor;
+            panelInicio.BringToFront();
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -156,6 +171,118 @@ namespace archive_source.Formularios.Administrador
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            if(btnInicio.Normalcolor != colorSeleccionado)
+            {
+                cambiarColoresBotones(colorNoSeleccionado);
+                btnInicio.Normalcolor = colorSeleccionado;
+            }
+            panelInicio.BringToFront();
+        }
+
+        //Función llamar forms tutores
+        private void verTutores()
+        {
+            if (btnTutores.Normalcolor != colorSeleccionado)
+            {
+                cambiarColoresBotones(colorNoSeleccionado);
+                btnTutores.Normalcolor = colorSeleccionado;
+            }
+
+            AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<FormTutor>(panelForm);
+        }
+
+        private void btnTutores_Click(object sender, EventArgs e)
+        {
+            verTutores();
+        }
+
+        private void btnAbritTutor_Click(object sender, EventArgs e)
+        {
+            verTutores();
+        }
+
+        //Función llamar forms administradores
+
+        private void verAdministradores()
+        {
+            if (btnAdministradores.Normalcolor != colorSeleccionado)
+            {
+                cambiarColoresBotones(colorNoSeleccionado);
+                btnAdministradores.Normalcolor = colorSeleccionado;
+            }
+
+            //Agregar formulario aquí
+            /*
+             AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
+             */
+        }
+
+        private void btnAdministradores_Click(object sender, EventArgs e)
+        {
+            verAdministradores();
+        }
+
+        private void btnAbrirAdmin_Click(object sender, EventArgs e)
+        {
+            verAdministradores();
+        }
+
+        //Función llamar forms tipos de rango
+        private void verRangos()
+        {
+            if (btnRangos.Normalcolor != colorSeleccionado)
+            {
+                cambiarColoresBotones(colorNoSeleccionado);
+                btnRangos.Normalcolor = colorSeleccionado;
+            }
+
+            //Agregar formulario aquí
+            /*
+             AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
+             */
+        }
+
+        private void btnRangos_Click(object sender, EventArgs e)
+        {
+            verRangos();
+        }
+
+        private void btnAbrirRango_Click(object sender, EventArgs e)
+        {
+            verRangos();
+        }
+
+        //Función llamar tipos de regalo
+        private void verRegalos()
+        {
+            if (btnRegalos.Normalcolor != colorSeleccionado)
+            {
+                cambiarColoresBotones(colorNoSeleccionado);
+                btnRegalos.Normalcolor = colorSeleccionado;
+            }
+
+            //Agregar formulario aquí
+            /*
+             AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
+             */
+        }
+
+        private void btnRegalos_Click(object sender, EventArgs e)
+        {
+            verRegalos();
+        }
+
+        private void btnAbrirRegalo_Click(object sender, EventArgs e)
+        {
+            verRegalos();
         }
     }
 }

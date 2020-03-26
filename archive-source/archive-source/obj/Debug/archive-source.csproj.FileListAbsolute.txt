@@ -13,3 +13,7 @@ C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debu
 C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.OtroFormEjemplo.resources
 C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.administradorGUI.resources
 C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.tutorGUI.resources
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\bin\Debug\MySql.Data.DLL
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\bin\Debug\Google.Protobuf.dll
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\bin\Debug\Renci.SshNet.dll
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\bin\Debug\BouncyCastle.Crypto.dll
