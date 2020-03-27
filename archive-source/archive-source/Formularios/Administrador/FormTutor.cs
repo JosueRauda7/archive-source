@@ -16,5 +16,11 @@ namespace archive_source.Formularios.Administrador
         {
             InitializeComponent();
         }
+
+        private void btnNuevoTutor_Click(object sender, EventArgs e)
+        {
+            AgregarForm form = new AgregarForm();
+            form.abrirFormulario<NuevoTutor>(panelForm);
+        }
     }
 }

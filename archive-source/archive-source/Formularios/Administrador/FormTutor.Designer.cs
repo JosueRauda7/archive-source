@@ -84,7 +84,7 @@
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(47, 179);
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(47, 158);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(662, 252);
@@ -123,6 +123,7 @@
             this.btnNuevoTutor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNuevoTutor.Textcolor = System.Drawing.Color.White;
             this.btnNuevoTutor.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoTutor.Click += new System.EventHandler(this.btnNuevoTutor_Click);
             // 
             // bunifuTextbox1
             // 
@@ -131,7 +132,7 @@
             this.bunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
             this.bunifuTextbox1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.Icon")));
-            this.bunifuTextbox1.Location = new System.Drawing.Point(459, 131);
+            this.bunifuTextbox1.Location = new System.Drawing.Point(459, 110);
             this.bunifuTextbox1.Name = "bunifuTextbox1";
             this.bunifuTextbox1.Size = new System.Drawing.Size(250, 42);
             this.bunifuTextbox1.TabIndex = 3;

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace archive_source.Formularios.Administrador
 {
-    public partial class NuevoTutor : Form
+    public partial class EditarTutor : Form
     {
-        public NuevoTutor()
+        public EditarTutor()
         {
             InitializeComponent();
         }
