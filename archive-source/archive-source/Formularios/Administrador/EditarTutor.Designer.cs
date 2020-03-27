@@ -31,22 +31,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarTutor));
             this.panelForm = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.cmbRango = new System.Windows.Forms.ComboBox();
+            this.txtApellidos = new System.Windows.Forms.TextBox();
+            this.txtNombres = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnAgregar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.btnModificar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelForm.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -58,7 +58,7 @@
             this.panelForm.Controls.Add(this.groupBox2);
             this.panelForm.Controls.Add(this.groupBox1);
             this.panelForm.Controls.Add(this.btnCancelar);
-            this.panelForm.Controls.Add(this.btnAgregar);
+            this.panelForm.Controls.Add(this.btnModificar);
             this.panelForm.Controls.Add(this.label1);
             this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelForm.Location = new System.Drawing.Point(0, 0);
@@ -68,8 +68,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.txtCorreo);
+            this.groupBox2.Controls.Add(this.txtTelefono);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -81,19 +81,19 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Contactos";
             // 
-            // textBox3
+            // txtCorreo
             // 
-            this.textBox3.Location = new System.Drawing.Point(82, 94);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(202, 26);
-            this.textBox3.TabIndex = 4;
+            this.txtCorreo.Location = new System.Drawing.Point(82, 94);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(202, 26);
+            this.txtCorreo.TabIndex = 4;
             // 
-            // textBox4
+            // txtTelefono
             // 
-            this.textBox4.Location = new System.Drawing.Point(82, 51);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(202, 26);
-            this.textBox4.TabIndex = 3;
+            this.txtTelefono.Location = new System.Drawing.Point(82, 51);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(202, 26);
+            this.txtTelefono.TabIndex = 3;
             // 
             // label6
             // 
@@ -118,10 +118,10 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtUsuario);
+            this.groupBox1.Controls.Add(this.cmbRango);
+            this.groupBox1.Controls.Add(this.txtApellidos);
+            this.groupBox1.Controls.Add(this.txtNombres);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -134,27 +134,44 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
             // 
-            // comboBox1
+            // label5
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(85, 169);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(202, 28);
-            this.comboBox1.TabIndex = 5;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(9, 46);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(61, 17);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Usuario:";
             // 
-            // textBox2
+            // txtUsuario
             // 
-            this.textBox2.Location = new System.Drawing.Point(85, 127);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(202, 26);
-            this.textBox2.TabIndex = 4;
+            this.txtUsuario.Location = new System.Drawing.Point(85, 40);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(202, 26);
+            this.txtUsuario.TabIndex = 6;
             // 
-            // textBox1
+            // cmbRango
             // 
-            this.textBox1.Location = new System.Drawing.Point(85, 84);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(202, 26);
-            this.textBox1.TabIndex = 3;
+            this.cmbRango.FormattingEnabled = true;
+            this.cmbRango.Location = new System.Drawing.Point(85, 169);
+            this.cmbRango.Name = "cmbRango";
+            this.cmbRango.Size = new System.Drawing.Size(202, 28);
+            this.cmbRango.TabIndex = 5;
+            // 
+            // txtApellidos
+            // 
+            this.txtApellidos.Location = new System.Drawing.Point(85, 127);
+            this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.Size = new System.Drawing.Size(202, 26);
+            this.txtApellidos.TabIndex = 4;
+            // 
+            // txtNombres
+            // 
+            this.txtNombres.Location = new System.Drawing.Point(85, 84);
+            this.txtNombres.Name = "txtNombres";
+            this.txtNombres.Size = new System.Drawing.Size(202, 26);
+            this.txtNombres.TabIndex = 3;
             // 
             // label4
             // 
@@ -185,17 +202,6 @@
             this.label2.Size = new System.Drawing.Size(69, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Nombres:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(36, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(321, 63);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Editar Tutor";
             // 
             // btnCancelar
             // 
@@ -232,57 +238,51 @@
             this.btnCancelar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // btnAgregar
+            // btnModificar
             // 
-            this.btnAgregar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
-            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
-            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAgregar.BorderRadius = 0;
-            this.btnAgregar.ButtonText = "Modificar";
-            this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgregar.DisabledColor = System.Drawing.Color.Gray;
-            this.btnAgregar.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnAgregar.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Iconimage")));
-            this.btnAgregar.Iconimage_right = null;
-            this.btnAgregar.Iconimage_right_Selected = null;
-            this.btnAgregar.Iconimage_Selected = null;
-            this.btnAgregar.IconMarginLeft = 0;
-            this.btnAgregar.IconMarginRight = 0;
-            this.btnAgregar.IconRightVisible = true;
-            this.btnAgregar.IconRightZoom = 0D;
-            this.btnAgregar.IconVisible = true;
-            this.btnAgregar.IconZoom = 90D;
-            this.btnAgregar.IsTab = false;
-            this.btnAgregar.Location = new System.Drawing.Point(406, 358);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
-            this.btnAgregar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(128)))));
-            this.btnAgregar.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnAgregar.selected = false;
-            this.btnAgregar.Size = new System.Drawing.Size(125, 48);
-            this.btnAgregar.TabIndex = 4;
-            this.btnAgregar.Text = "Modificar";
-            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Textcolor = System.Drawing.Color.White;
-            this.btnAgregar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            this.btnModificar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
+            this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
+            this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnModificar.BorderRadius = 0;
+            this.btnModificar.ButtonText = "Modificar";
+            this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnModificar.DisabledColor = System.Drawing.Color.Gray;
+            this.btnModificar.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnModificar.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnModificar.Iconimage")));
+            this.btnModificar.Iconimage_right = null;
+            this.btnModificar.Iconimage_right_Selected = null;
+            this.btnModificar.Iconimage_Selected = null;
+            this.btnModificar.IconMarginLeft = 0;
+            this.btnModificar.IconMarginRight = 0;
+            this.btnModificar.IconRightVisible = true;
+            this.btnModificar.IconRightZoom = 0D;
+            this.btnModificar.IconVisible = true;
+            this.btnModificar.IconZoom = 90D;
+            this.btnModificar.IsTab = false;
+            this.btnModificar.Location = new System.Drawing.Point(406, 358);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
+            this.btnModificar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(128)))));
+            this.btnModificar.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnModificar.selected = false;
+            this.btnModificar.Size = new System.Drawing.Size(125, 48);
+            this.btnModificar.TabIndex = 4;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificar.Textcolor = System.Drawing.Color.White;
+            this.btnModificar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // textBox5
+            // label1
             // 
-            this.textBox5.Location = new System.Drawing.Point(85, 40);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(202, 26);
-            this.textBox5.TabIndex = 6;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(9, 46);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 17);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Usuario:";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(36, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(321, 63);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Editar Tutor";
             // 
             // EditarTutor
             // 
@@ -307,21 +307,21 @@
 
         private System.Windows.Forms.Panel panelForm;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCorreo;
+        private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cmbRango;
+        private System.Windows.Forms.TextBox txtApellidos;
+        private System.Windows.Forms.TextBox txtNombres;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuFlatButton btnCancelar;
-        private Bunifu.Framework.UI.BunifuFlatButton btnAgregar;
+        private Bunifu.Framework.UI.BunifuFlatButton btnModificar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtUsuario;
     }
 }

@@ -33,14 +33,27 @@
             this.panelPrincipal = new System.Windows.Forms.Panel();
             this.PanelInferior = new System.Windows.Forms.Panel();
             this.panelForm = new System.Windows.Forms.Panel();
+            this.panelInicio = new System.Windows.Forms.Panel();
+            this.panelControl = new System.Windows.Forms.FlowLayoutPanel();
+            this.Bienvenida = new System.Windows.Forms.Label();
             this.panelSuperior = new System.Windows.Forms.Panel();
             this.panelBotones = new System.Windows.Forms.Panel();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.btnAbrirBeneficiarios = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnAbrirFamilias = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnAbrirHMed = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnAbrirEstudios = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnAbrirMed = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnAbrirEscuelas = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnAbrirRegalos = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnCerrar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMinimizar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnRestaurar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMaximizar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMenu = new Bunifu.Framework.UI.BunifuImageButton();
-            this.panelMenu = new System.Windows.Forms.Panel();
             this.btnRegalos = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnHistorialMed = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEscuelas = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -49,31 +62,18 @@
             this.btnFamilias = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnBeneficiarios = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnInicio = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.panelInicio = new System.Windows.Forms.Panel();
-            this.panelControl = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnAbrirBeneficiarios = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnAbrirFamilias = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnAbrirHMed = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnAbrirEstudios = new Bunifu.Framework.UI.BunifuTileButton();
-            this.Bienvenida = new System.Windows.Forms.Label();
-            this.btnAbrirMed = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnAbrirEscuelas = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnAbrirRegalos = new Bunifu.Framework.UI.BunifuTileButton();
             this.panelPrincipal.SuspendLayout();
             this.panelForm.SuspendLayout();
+            this.panelInicio.SuspendLayout();
+            this.panelControl.SuspendLayout();
             this.panelSuperior.SuspendLayout();
             this.panelBotones.SuspendLayout();
+            this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
-            this.panelMenu.SuspendLayout();
-            this.panelInicio.SuspendLayout();
-            this.panelControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelPrincipal
@@ -106,6 +106,44 @@
             this.panelForm.Size = new System.Drawing.Size(934, 482);
             this.panelForm.TabIndex = 4;
             // 
+            // panelInicio
+            // 
+            this.panelInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(128)))));
+            this.panelInicio.Controls.Add(this.panelControl);
+            this.panelInicio.Controls.Add(this.Bienvenida);
+            this.panelInicio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelInicio.Location = new System.Drawing.Point(0, 0);
+            this.panelInicio.Name = "panelInicio";
+            this.panelInicio.Size = new System.Drawing.Size(934, 482);
+            this.panelInicio.TabIndex = 7;
+            // 
+            // panelControl
+            // 
+            this.panelControl.Controls.Add(this.btnAbrirBeneficiarios);
+            this.panelControl.Controls.Add(this.btnAbrirFamilias);
+            this.panelControl.Controls.Add(this.btnAbrirHMed);
+            this.panelControl.Controls.Add(this.btnAbrirEstudios);
+            this.panelControl.Controls.Add(this.btnAbrirMed);
+            this.panelControl.Controls.Add(this.btnAbrirEscuelas);
+            this.panelControl.Controls.Add(this.btnAbrirRegalos);
+            this.panelControl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControl.Location = new System.Drawing.Point(0, 140);
+            this.panelControl.Name = "panelControl";
+            this.panelControl.Padding = new System.Windows.Forms.Padding(119, 0, 119, 0);
+            this.panelControl.Size = new System.Drawing.Size(934, 342);
+            this.panelControl.TabIndex = 15;
+            // 
+            // Bienvenida
+            // 
+            this.Bienvenida.AutoSize = true;
+            this.Bienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bienvenida.ForeColor = System.Drawing.Color.White;
+            this.Bienvenida.Location = new System.Drawing.Point(26, 26);
+            this.Bienvenida.Name = "Bienvenida";
+            this.Bienvenida.Size = new System.Drawing.Size(547, 63);
+            this.Bienvenida.TabIndex = 10;
+            this.Bienvenida.Text = "Bienvenido [Usuario]";
+            // 
             // panelSuperior
             // 
             this.panelSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
@@ -128,6 +166,188 @@
             this.panelBotones.Name = "panelBotones";
             this.panelBotones.Size = new System.Drawing.Size(281, 100);
             this.panelBotones.TabIndex = 6;
+            // 
+            // panelMenu
+            // 
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
+            this.panelMenu.Controls.Add(this.btnRegalos);
+            this.panelMenu.Controls.Add(this.btnHistorialMed);
+            this.panelMenu.Controls.Add(this.btnEscuelas);
+            this.panelMenu.Controls.Add(this.btnMedicamentos);
+            this.panelMenu.Controls.Add(this.btnEstudios);
+            this.panelMenu.Controls.Add(this.btnFamilias);
+            this.panelMenu.Controls.Add(this.btnBeneficiarios);
+            this.panelMenu.Controls.Add(this.btnInicio);
+            this.panelMenu.Controls.Add(this.bunifuSeparator1);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(232, 700);
+            this.panelMenu.TabIndex = 1;
+            // 
+            // bunifuSeparator1
+            // 
+            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator1.LineThickness = 1;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(23, 142);
+            this.bunifuSeparator1.Name = "bunifuSeparator1";
+            this.bunifuSeparator1.Size = new System.Drawing.Size(172, 6);
+            this.bunifuSeparator1.TabIndex = 0;
+            this.bunifuSeparator1.Transparency = 255;
+            this.bunifuSeparator1.Vertical = false;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 15;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panelSuperior;
+            this.bunifuDragControl1.Vertical = true;
+            // 
+            // btnAbrirBeneficiarios
+            // 
+            this.btnAbrirBeneficiarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirBeneficiarios.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirBeneficiarios.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnAbrirBeneficiarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbrirBeneficiarios.Font = new System.Drawing.Font("Century Gothic", 11F);
+            this.btnAbrirBeneficiarios.ForeColor = System.Drawing.Color.White;
+            this.btnAbrirBeneficiarios.Image = global::archive_source.Properties.Resources.lovehand;
+            this.btnAbrirBeneficiarios.ImagePosition = 17;
+            this.btnAbrirBeneficiarios.ImageZoom = 50;
+            this.btnAbrirBeneficiarios.LabelPosition = 34;
+            this.btnAbrirBeneficiarios.LabelText = "BENEFICIARIOS";
+            this.btnAbrirBeneficiarios.Location = new System.Drawing.Point(125, 6);
+            this.btnAbrirBeneficiarios.Margin = new System.Windows.Forms.Padding(6);
+            this.btnAbrirBeneficiarios.Name = "btnAbrirBeneficiarios";
+            this.btnAbrirBeneficiarios.Size = new System.Drawing.Size(129, 102);
+            this.btnAbrirBeneficiarios.TabIndex = 15;
+            this.btnAbrirBeneficiarios.Click += new System.EventHandler(this.btnAbrirBeneficiarios_Click);
+            // 
+            // btnAbrirFamilias
+            // 
+            this.btnAbrirFamilias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirFamilias.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirFamilias.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnAbrirFamilias.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbrirFamilias.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.btnAbrirFamilias.ForeColor = System.Drawing.Color.White;
+            this.btnAbrirFamilias.Image = global::archive_source.Properties.Resources.family;
+            this.btnAbrirFamilias.ImagePosition = 19;
+            this.btnAbrirFamilias.ImageZoom = 50;
+            this.btnAbrirFamilias.LabelPosition = 36;
+            this.btnAbrirFamilias.LabelText = "FAMILIAS";
+            this.btnAbrirFamilias.Location = new System.Drawing.Point(265, 5);
+            this.btnAbrirFamilias.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnAbrirFamilias.Name = "btnAbrirFamilias";
+            this.btnAbrirFamilias.Size = new System.Drawing.Size(129, 102);
+            this.btnAbrirFamilias.TabIndex = 16;
+            this.btnAbrirFamilias.Click += new System.EventHandler(this.btnAbrirFamilias_Click);
+            // 
+            // btnAbrirHMed
+            // 
+            this.btnAbrirHMed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirHMed.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirHMed.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnAbrirHMed.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbrirHMed.Font = new System.Drawing.Font("Century Gothic", 8F);
+            this.btnAbrirHMed.ForeColor = System.Drawing.Color.White;
+            this.btnAbrirHMed.Image = global::archive_source.Properties.Resources.appointment_book;
+            this.btnAbrirHMed.ImagePosition = 13;
+            this.btnAbrirHMed.ImageZoom = 50;
+            this.btnAbrirHMed.LabelPosition = 27;
+            this.btnAbrirHMed.LabelText = "HISTORIAL MÉDICO";
+            this.btnAbrirHMed.Location = new System.Drawing.Point(403, 4);
+            this.btnAbrirHMed.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAbrirHMed.Name = "btnAbrirHMed";
+            this.btnAbrirHMed.Size = new System.Drawing.Size(129, 102);
+            this.btnAbrirHMed.TabIndex = 17;
+            this.btnAbrirHMed.Click += new System.EventHandler(this.btnAbrirHMed_Click);
+            // 
+            // btnAbrirEstudios
+            // 
+            this.btnAbrirEstudios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirEstudios.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirEstudios.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnAbrirEstudios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbrirEstudios.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.btnAbrirEstudios.ForeColor = System.Drawing.Color.White;
+            this.btnAbrirEstudios.Image = global::archive_source.Properties.Resources.desk;
+            this.btnAbrirEstudios.ImagePosition = 18;
+            this.btnAbrirEstudios.ImageZoom = 50;
+            this.btnAbrirEstudios.LabelPosition = 36;
+            this.btnAbrirEstudios.LabelText = "ESTUDIOS";
+            this.btnAbrirEstudios.Location = new System.Drawing.Point(541, 5);
+            this.btnAbrirEstudios.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnAbrirEstudios.Name = "btnAbrirEstudios";
+            this.btnAbrirEstudios.Size = new System.Drawing.Size(129, 102);
+            this.btnAbrirEstudios.TabIndex = 18;
+            this.btnAbrirEstudios.Click += new System.EventHandler(this.btnAbrirEstudios_Click);
+            // 
+            // btnAbrirMed
+            // 
+            this.btnAbrirMed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirMed.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirMed.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnAbrirMed.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbrirMed.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btnAbrirMed.ForeColor = System.Drawing.Color.White;
+            this.btnAbrirMed.Image = global::archive_source.Properties.Resources.first_aid_kit;
+            this.btnAbrirMed.ImagePosition = 15;
+            this.btnAbrirMed.ImageZoom = 50;
+            this.btnAbrirMed.LabelPosition = 29;
+            this.btnAbrirMed.LabelText = "MEDICAMENTOS";
+            this.btnAbrirMed.Location = new System.Drawing.Point(680, 5);
+            this.btnAbrirMed.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAbrirMed.Name = "btnAbrirMed";
+            this.btnAbrirMed.Size = new System.Drawing.Size(129, 102);
+            this.btnAbrirMed.TabIndex = 19;
+            this.btnAbrirMed.Click += new System.EventHandler(this.btnAbrirMed_Click);
+            // 
+            // btnAbrirEscuelas
+            // 
+            this.btnAbrirEscuelas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirEscuelas.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirEscuelas.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnAbrirEscuelas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbrirEscuelas.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btnAbrirEscuelas.ForeColor = System.Drawing.Color.White;
+            this.btnAbrirEscuelas.Image = global::archive_source.Properties.Resources.school;
+            this.btnAbrirEscuelas.ImagePosition = 15;
+            this.btnAbrirEscuelas.ImageZoom = 50;
+            this.btnAbrirEscuelas.LabelPosition = 29;
+            this.btnAbrirEscuelas.LabelText = "ESCUELAS";
+            this.btnAbrirEscuelas.Location = new System.Drawing.Point(124, 119);
+            this.btnAbrirEscuelas.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAbrirEscuelas.Name = "btnAbrirEscuelas";
+            this.btnAbrirEscuelas.Size = new System.Drawing.Size(129, 102);
+            this.btnAbrirEscuelas.TabIndex = 20;
+            this.btnAbrirEscuelas.Click += new System.EventHandler(this.btnAbrirEscuelas_Click);
+            // 
+            // btnAbrirRegalos
+            // 
+            this.btnAbrirRegalos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirRegalos.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirRegalos.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnAbrirRegalos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbrirRegalos.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btnAbrirRegalos.ForeColor = System.Drawing.Color.White;
+            this.btnAbrirRegalos.Image = global::archive_source.Properties.Resources.gift__1_;
+            this.btnAbrirRegalos.ImagePosition = 15;
+            this.btnAbrirRegalos.ImageZoom = 50;
+            this.btnAbrirRegalos.LabelPosition = 29;
+            this.btnAbrirRegalos.LabelText = "REGALOS";
+            this.btnAbrirRegalos.Location = new System.Drawing.Point(263, 119);
+            this.btnAbrirRegalos.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAbrirRegalos.Name = "btnAbrirRegalos";
+            this.btnAbrirRegalos.Size = new System.Drawing.Size(129, 102);
+            this.btnAbrirRegalos.TabIndex = 21;
+            this.btnAbrirRegalos.Click += new System.EventHandler(this.btnAbrirRegalos_Click);
             // 
             // btnCerrar
             // 
@@ -202,24 +422,6 @@
             this.btnMenu.Zoom = 10;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // panelMenu
-            // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
-            this.panelMenu.Controls.Add(this.btnRegalos);
-            this.panelMenu.Controls.Add(this.btnHistorialMed);
-            this.panelMenu.Controls.Add(this.btnEscuelas);
-            this.panelMenu.Controls.Add(this.btnMedicamentos);
-            this.panelMenu.Controls.Add(this.btnEstudios);
-            this.panelMenu.Controls.Add(this.btnFamilias);
-            this.panelMenu.Controls.Add(this.btnBeneficiarios);
-            this.panelMenu.Controls.Add(this.btnInicio);
-            this.panelMenu.Controls.Add(this.bunifuSeparator1);
-            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(232, 700);
-            this.panelMenu.TabIndex = 1;
-            // 
             // btnRegalos
             // 
             this.btnRegalos.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
@@ -230,7 +432,7 @@
             this.btnRegalos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegalos.DisabledColor = System.Drawing.Color.Gray;
             this.btnRegalos.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnRegalos.Iconimage = global::archive_source.Properties.Resources.guardar;
+            this.btnRegalos.Iconimage = global::archive_source.Properties.Resources.gift__1_;
             this.btnRegalos.Iconimage_right = null;
             this.btnRegalos.Iconimage_right_Selected = null;
             this.btnRegalos.Iconimage_Selected = null;
@@ -266,7 +468,7 @@
             this.btnHistorialMed.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHistorialMed.DisabledColor = System.Drawing.Color.Gray;
             this.btnHistorialMed.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnHistorialMed.Iconimage = global::archive_source.Properties.Resources.guardar;
+            this.btnHistorialMed.Iconimage = global::archive_source.Properties.Resources.appointment_book;
             this.btnHistorialMed.Iconimage_right = null;
             this.btnHistorialMed.Iconimage_right_Selected = null;
             this.btnHistorialMed.Iconimage_Selected = null;
@@ -277,7 +479,7 @@
             this.btnHistorialMed.IconVisible = true;
             this.btnHistorialMed.IconZoom = 90D;
             this.btnHistorialMed.IsTab = false;
-            this.btnHistorialMed.Location = new System.Drawing.Point(0, 365);
+            this.btnHistorialMed.Location = new System.Drawing.Point(-1, 365);
             this.btnHistorialMed.Margin = new System.Windows.Forms.Padding(0);
             this.btnHistorialMed.Name = "btnHistorialMed";
             this.btnHistorialMed.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
@@ -302,7 +504,7 @@
             this.btnEscuelas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEscuelas.DisabledColor = System.Drawing.Color.Gray;
             this.btnEscuelas.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnEscuelas.Iconimage = global::archive_source.Properties.Resources.guardar;
+            this.btnEscuelas.Iconimage = global::archive_source.Properties.Resources.school;
             this.btnEscuelas.Iconimage_right = null;
             this.btnEscuelas.Iconimage_right_Selected = null;
             this.btnEscuelas.Iconimage_Selected = null;
@@ -338,7 +540,7 @@
             this.btnMedicamentos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMedicamentos.DisabledColor = System.Drawing.Color.Gray;
             this.btnMedicamentos.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnMedicamentos.Iconimage = global::archive_source.Properties.Resources.guardar;
+            this.btnMedicamentos.Iconimage = global::archive_source.Properties.Resources.first_aid_kit;
             this.btnMedicamentos.Iconimage_right = null;
             this.btnMedicamentos.Iconimage_right_Selected = null;
             this.btnMedicamentos.Iconimage_Selected = null;
@@ -374,7 +576,7 @@
             this.btnEstudios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEstudios.DisabledColor = System.Drawing.Color.Gray;
             this.btnEstudios.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnEstudios.Iconimage = global::archive_source.Properties.Resources.guardar;
+            this.btnEstudios.Iconimage = global::archive_source.Properties.Resources.desk;
             this.btnEstudios.Iconimage_right = null;
             this.btnEstudios.Iconimage_right_Selected = null;
             this.btnEstudios.Iconimage_Selected = null;
@@ -410,7 +612,7 @@
             this.btnFamilias.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFamilias.DisabledColor = System.Drawing.Color.Gray;
             this.btnFamilias.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnFamilias.Iconimage = global::archive_source.Properties.Resources.guardar;
+            this.btnFamilias.Iconimage = global::archive_source.Properties.Resources.family;
             this.btnFamilias.Iconimage_right = null;
             this.btnFamilias.Iconimage_right_Selected = null;
             this.btnFamilias.Iconimage_Selected = null;
@@ -446,7 +648,7 @@
             this.btnBeneficiarios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBeneficiarios.DisabledColor = System.Drawing.Color.Gray;
             this.btnBeneficiarios.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnBeneficiarios.Iconimage = global::archive_source.Properties.Resources.guardar;
+            this.btnBeneficiarios.Iconimage = global::archive_source.Properties.Resources.lovehand;
             this.btnBeneficiarios.Iconimage_right = null;
             this.btnBeneficiarios.Iconimage_right_Selected = null;
             this.btnBeneficiarios.Iconimage_Selected = null;
@@ -482,7 +684,7 @@
             this.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInicio.DisabledColor = System.Drawing.Color.Gray;
             this.btnInicio.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnInicio.Iconimage = global::archive_source.Properties.Resources.guardar;
+            this.btnInicio.Iconimage = global::archive_source.Properties.Resources.house;
             this.btnInicio.Iconimage_right = null;
             this.btnInicio.Iconimage_right_Selected = null;
             this.btnInicio.Iconimage_Selected = null;
@@ -508,208 +710,6 @@
             this.btnInicio.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
-            // bunifuSeparator1
-            // 
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(23, 142);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(172, 6);
-            this.bunifuSeparator1.TabIndex = 0;
-            this.bunifuSeparator1.Transparency = 255;
-            this.bunifuSeparator1.Vertical = false;
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 15;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // bunifuDragControl1
-            // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.panelSuperior;
-            this.bunifuDragControl1.Vertical = true;
-            // 
-            // panelInicio
-            // 
-            this.panelInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(128)))));
-            this.panelInicio.Controls.Add(this.panelControl);
-            this.panelInicio.Controls.Add(this.Bienvenida);
-            this.panelInicio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelInicio.Location = new System.Drawing.Point(0, 0);
-            this.panelInicio.Name = "panelInicio";
-            this.panelInicio.Size = new System.Drawing.Size(934, 482);
-            this.panelInicio.TabIndex = 7;
-            // 
-            // panelControl
-            // 
-            this.panelControl.Controls.Add(this.btnAbrirBeneficiarios);
-            this.panelControl.Controls.Add(this.btnAbrirFamilias);
-            this.panelControl.Controls.Add(this.btnAbrirHMed);
-            this.panelControl.Controls.Add(this.btnAbrirEstudios);
-            this.panelControl.Controls.Add(this.btnAbrirMed);
-            this.panelControl.Controls.Add(this.btnAbrirEscuelas);
-            this.panelControl.Controls.Add(this.btnAbrirRegalos);
-            this.panelControl.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl.Location = new System.Drawing.Point(0, 140);
-            this.panelControl.Name = "panelControl";
-            this.panelControl.Padding = new System.Windows.Forms.Padding(119, 0, 119, 0);
-            this.panelControl.Size = new System.Drawing.Size(934, 342);
-            this.panelControl.TabIndex = 15;
-            // 
-            // btnAbrirBeneficiarios
-            // 
-            this.btnAbrirBeneficiarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirBeneficiarios.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirBeneficiarios.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
-            this.btnAbrirBeneficiarios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAbrirBeneficiarios.Font = new System.Drawing.Font("Century Gothic", 11F);
-            this.btnAbrirBeneficiarios.ForeColor = System.Drawing.Color.White;
-            this.btnAbrirBeneficiarios.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirBeneficiarios.Image")));
-            this.btnAbrirBeneficiarios.ImagePosition = 17;
-            this.btnAbrirBeneficiarios.ImageZoom = 50;
-            this.btnAbrirBeneficiarios.LabelPosition = 34;
-            this.btnAbrirBeneficiarios.LabelText = "BENEFICIARIOS";
-            this.btnAbrirBeneficiarios.Location = new System.Drawing.Point(125, 6);
-            this.btnAbrirBeneficiarios.Margin = new System.Windows.Forms.Padding(6);
-            this.btnAbrirBeneficiarios.Name = "btnAbrirBeneficiarios";
-            this.btnAbrirBeneficiarios.Size = new System.Drawing.Size(129, 102);
-            this.btnAbrirBeneficiarios.TabIndex = 15;
-            this.btnAbrirBeneficiarios.Click += new System.EventHandler(this.btnAbrirBeneficiarios_Click);
-            // 
-            // btnAbrirFamilias
-            // 
-            this.btnAbrirFamilias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirFamilias.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirFamilias.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
-            this.btnAbrirFamilias.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAbrirFamilias.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.btnAbrirFamilias.ForeColor = System.Drawing.Color.White;
-            this.btnAbrirFamilias.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirFamilias.Image")));
-            this.btnAbrirFamilias.ImagePosition = 19;
-            this.btnAbrirFamilias.ImageZoom = 50;
-            this.btnAbrirFamilias.LabelPosition = 36;
-            this.btnAbrirFamilias.LabelText = "FAMILIAS";
-            this.btnAbrirFamilias.Location = new System.Drawing.Point(265, 5);
-            this.btnAbrirFamilias.Margin = new System.Windows.Forms.Padding(5);
-            this.btnAbrirFamilias.Name = "btnAbrirFamilias";
-            this.btnAbrirFamilias.Size = new System.Drawing.Size(129, 102);
-            this.btnAbrirFamilias.TabIndex = 16;
-            this.btnAbrirFamilias.Click += new System.EventHandler(this.btnAbrirFamilias_Click);
-            // 
-            // btnAbrirHMed
-            // 
-            this.btnAbrirHMed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirHMed.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirHMed.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
-            this.btnAbrirHMed.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAbrirHMed.Font = new System.Drawing.Font("Century Gothic", 8F);
-            this.btnAbrirHMed.ForeColor = System.Drawing.Color.White;
-            this.btnAbrirHMed.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirHMed.Image")));
-            this.btnAbrirHMed.ImagePosition = 13;
-            this.btnAbrirHMed.ImageZoom = 50;
-            this.btnAbrirHMed.LabelPosition = 27;
-            this.btnAbrirHMed.LabelText = "HISTORIAL MÉDICO";
-            this.btnAbrirHMed.Location = new System.Drawing.Point(403, 4);
-            this.btnAbrirHMed.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnAbrirHMed.Name = "btnAbrirHMed";
-            this.btnAbrirHMed.Size = new System.Drawing.Size(129, 102);
-            this.btnAbrirHMed.TabIndex = 17;
-            this.btnAbrirHMed.Click += new System.EventHandler(this.btnAbrirHMed_Click);
-            // 
-            // btnAbrirEstudios
-            // 
-            this.btnAbrirEstudios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirEstudios.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirEstudios.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
-            this.btnAbrirEstudios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAbrirEstudios.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.btnAbrirEstudios.ForeColor = System.Drawing.Color.White;
-            this.btnAbrirEstudios.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirEstudios.Image")));
-            this.btnAbrirEstudios.ImagePosition = 18;
-            this.btnAbrirEstudios.ImageZoom = 50;
-            this.btnAbrirEstudios.LabelPosition = 36;
-            this.btnAbrirEstudios.LabelText = "ESTUDIOS";
-            this.btnAbrirEstudios.Location = new System.Drawing.Point(541, 5);
-            this.btnAbrirEstudios.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.btnAbrirEstudios.Name = "btnAbrirEstudios";
-            this.btnAbrirEstudios.Size = new System.Drawing.Size(129, 102);
-            this.btnAbrirEstudios.TabIndex = 18;
-            this.btnAbrirEstudios.Click += new System.EventHandler(this.btnAbrirEstudios_Click);
-            // 
-            // Bienvenida
-            // 
-            this.Bienvenida.AutoSize = true;
-            this.Bienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bienvenida.ForeColor = System.Drawing.Color.White;
-            this.Bienvenida.Location = new System.Drawing.Point(26, 26);
-            this.Bienvenida.Name = "Bienvenida";
-            this.Bienvenida.Size = new System.Drawing.Size(547, 63);
-            this.Bienvenida.TabIndex = 10;
-            this.Bienvenida.Text = "Bienvenido [Usuario]";
-            // 
-            // btnAbrirMed
-            // 
-            this.btnAbrirMed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirMed.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirMed.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
-            this.btnAbrirMed.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAbrirMed.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.btnAbrirMed.ForeColor = System.Drawing.Color.White;
-            this.btnAbrirMed.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirMed.Image")));
-            this.btnAbrirMed.ImagePosition = 15;
-            this.btnAbrirMed.ImageZoom = 50;
-            this.btnAbrirMed.LabelPosition = 29;
-            this.btnAbrirMed.LabelText = "MEDICAMENTOS";
-            this.btnAbrirMed.Location = new System.Drawing.Point(680, 5);
-            this.btnAbrirMed.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.btnAbrirMed.Name = "btnAbrirMed";
-            this.btnAbrirMed.Size = new System.Drawing.Size(129, 102);
-            this.btnAbrirMed.TabIndex = 19;
-            this.btnAbrirMed.Click += new System.EventHandler(this.btnAbrirMed_Click);
-            // 
-            // btnAbrirEscuelas
-            // 
-            this.btnAbrirEscuelas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirEscuelas.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirEscuelas.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
-            this.btnAbrirEscuelas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAbrirEscuelas.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.btnAbrirEscuelas.ForeColor = System.Drawing.Color.White;
-            this.btnAbrirEscuelas.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirEscuelas.Image")));
-            this.btnAbrirEscuelas.ImagePosition = 15;
-            this.btnAbrirEscuelas.ImageZoom = 50;
-            this.btnAbrirEscuelas.LabelPosition = 29;
-            this.btnAbrirEscuelas.LabelText = "ESCUELAS";
-            this.btnAbrirEscuelas.Location = new System.Drawing.Point(124, 119);
-            this.btnAbrirEscuelas.Margin = new System.Windows.Forms.Padding(5);
-            this.btnAbrirEscuelas.Name = "btnAbrirEscuelas";
-            this.btnAbrirEscuelas.Size = new System.Drawing.Size(129, 102);
-            this.btnAbrirEscuelas.TabIndex = 20;
-            this.btnAbrirEscuelas.Click += new System.EventHandler(this.btnAbrirEscuelas_Click);
-            // 
-            // btnAbrirRegalos
-            // 
-            this.btnAbrirRegalos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirRegalos.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirRegalos.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
-            this.btnAbrirRegalos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAbrirRegalos.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.btnAbrirRegalos.ForeColor = System.Drawing.Color.White;
-            this.btnAbrirRegalos.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirRegalos.Image")));
-            this.btnAbrirRegalos.ImagePosition = 15;
-            this.btnAbrirRegalos.ImageZoom = 50;
-            this.btnAbrirRegalos.LabelPosition = 29;
-            this.btnAbrirRegalos.LabelText = "REGALOS";
-            this.btnAbrirRegalos.Location = new System.Drawing.Point(263, 119);
-            this.btnAbrirRegalos.Margin = new System.Windows.Forms.Padding(5);
-            this.btnAbrirRegalos.Name = "btnAbrirRegalos";
-            this.btnAbrirRegalos.Size = new System.Drawing.Size(129, 102);
-            this.btnAbrirRegalos.TabIndex = 21;
-            this.btnAbrirRegalos.Click += new System.EventHandler(this.btnAbrirRegalos_Click);
-            // 
             // tutorGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -722,17 +722,17 @@
             this.Text = "tutorGUI";
             this.panelPrincipal.ResumeLayout(false);
             this.panelForm.ResumeLayout(false);
+            this.panelInicio.ResumeLayout(false);
+            this.panelInicio.PerformLayout();
+            this.panelControl.ResumeLayout(false);
             this.panelSuperior.ResumeLayout(false);
             this.panelBotones.ResumeLayout(false);
+            this.panelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
-            this.panelMenu.ResumeLayout(false);
-            this.panelInicio.ResumeLayout(false);
-            this.panelInicio.PerformLayout();
-            this.panelControl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

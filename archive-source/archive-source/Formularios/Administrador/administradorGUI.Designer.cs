@@ -32,42 +32,42 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(administradorGUI));
             this.panelPrincipal = new System.Windows.Forms.Panel();
             this.panelForm = new System.Windows.Forms.Panel();
+            this.panelInicio = new System.Windows.Forms.Panel();
+            this.panelControl = new System.Windows.Forms.FlowLayoutPanel();
+            this.Bienvenida = new System.Windows.Forms.Label();
             this.PanelInferior = new System.Windows.Forms.Panel();
             this.panelSuperior = new System.Windows.Forms.Panel();
             this.panelBotones = new System.Windows.Forms.Panel();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.btnAbritTutor = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnAbrirAdmin = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnAbrirRango = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnAbrirRegalo = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnCerrar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMinimizar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnRestaurar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMaximizar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMenu = new Bunifu.Framework.UI.BunifuImageButton();
-            this.panelMenu = new System.Windows.Forms.Panel();
             this.btnRangos = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnInicio = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnRegalos = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnTutores = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAdministradores = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.panelInicio = new System.Windows.Forms.Panel();
-            this.panelControl = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnAbritTutor = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnAbrirRegalo = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnAbrirRango = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnAbrirAdmin = new Bunifu.Framework.UI.BunifuTileButton();
-            this.Bienvenida = new System.Windows.Forms.Label();
             this.panelPrincipal.SuspendLayout();
             this.panelForm.SuspendLayout();
+            this.panelInicio.SuspendLayout();
+            this.panelControl.SuspendLayout();
             this.panelSuperior.SuspendLayout();
             this.panelBotones.SuspendLayout();
+            this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
-            this.panelMenu.SuspendLayout();
-            this.panelInicio.SuspendLayout();
-            this.panelControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelPrincipal
@@ -90,6 +90,41 @@
             this.panelForm.Name = "panelForm";
             this.panelForm.Size = new System.Drawing.Size(934, 482);
             this.panelForm.TabIndex = 3;
+            // 
+            // panelInicio
+            // 
+            this.panelInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(128)))));
+            this.panelInicio.Controls.Add(this.panelControl);
+            this.panelInicio.Controls.Add(this.Bienvenida);
+            this.panelInicio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelInicio.Location = new System.Drawing.Point(0, 0);
+            this.panelInicio.Name = "panelInicio";
+            this.panelInicio.Size = new System.Drawing.Size(934, 482);
+            this.panelInicio.TabIndex = 6;
+            // 
+            // panelControl
+            // 
+            this.panelControl.Controls.Add(this.btnAbritTutor);
+            this.panelControl.Controls.Add(this.btnAbrirAdmin);
+            this.panelControl.Controls.Add(this.btnAbrirRango);
+            this.panelControl.Controls.Add(this.btnAbrirRegalo);
+            this.panelControl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControl.Location = new System.Drawing.Point(0, 140);
+            this.panelControl.Name = "panelControl";
+            this.panelControl.Padding = new System.Windows.Forms.Padding(119, 0, 119, 0);
+            this.panelControl.Size = new System.Drawing.Size(934, 342);
+            this.panelControl.TabIndex = 15;
+            // 
+            // Bienvenida
+            // 
+            this.Bienvenida.AutoSize = true;
+            this.Bienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bienvenida.ForeColor = System.Drawing.Color.White;
+            this.Bienvenida.Location = new System.Drawing.Point(26, 26);
+            this.Bienvenida.Name = "Bienvenida";
+            this.Bienvenida.Size = new System.Drawing.Size(547, 63);
+            this.Bienvenida.TabIndex = 10;
+            this.Bienvenida.Text = "Bienvenido [Usuario]";
             // 
             // PanelInferior
             // 
@@ -122,6 +157,125 @@
             this.panelBotones.Name = "panelBotones";
             this.panelBotones.Size = new System.Drawing.Size(281, 100);
             this.panelBotones.TabIndex = 6;
+            // 
+            // panelMenu
+            // 
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
+            this.panelMenu.Controls.Add(this.btnRangos);
+            this.panelMenu.Controls.Add(this.bunifuSeparator1);
+            this.panelMenu.Controls.Add(this.btnInicio);
+            this.panelMenu.Controls.Add(this.btnRegalos);
+            this.panelMenu.Controls.Add(this.btnTutores);
+            this.panelMenu.Controls.Add(this.btnAdministradores);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(232, 700);
+            this.panelMenu.TabIndex = 0;
+            // 
+            // bunifuSeparator1
+            // 
+            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator1.LineThickness = 1;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(26, 133);
+            this.bunifuSeparator1.Name = "bunifuSeparator1";
+            this.bunifuSeparator1.Size = new System.Drawing.Size(172, 8);
+            this.bunifuSeparator1.TabIndex = 0;
+            this.bunifuSeparator1.Transparency = 255;
+            this.bunifuSeparator1.Vertical = false;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 15;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panelSuperior;
+            this.bunifuDragControl1.Vertical = true;
+            // 
+            // btnAbritTutor
+            // 
+            this.btnAbritTutor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbritTutor.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbritTutor.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnAbritTutor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbritTutor.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.btnAbritTutor.ForeColor = System.Drawing.Color.White;
+            this.btnAbritTutor.Image = global::archive_source.Properties.Resources.wise;
+            this.btnAbritTutor.ImagePosition = 20;
+            this.btnAbritTutor.ImageZoom = 50;
+            this.btnAbritTutor.LabelPosition = 41;
+            this.btnAbritTutor.LabelText = "TUTORES";
+            this.btnAbritTutor.Location = new System.Drawing.Point(125, 6);
+            this.btnAbritTutor.Margin = new System.Windows.Forms.Padding(6);
+            this.btnAbritTutor.Name = "btnAbritTutor";
+            this.btnAbritTutor.Size = new System.Drawing.Size(156, 145);
+            this.btnAbritTutor.TabIndex = 15;
+            this.btnAbritTutor.Click += new System.EventHandler(this.btnAbritTutor_Click);
+            // 
+            // btnAbrirAdmin
+            // 
+            this.btnAbrirAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirAdmin.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirAdmin.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnAbrirAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbrirAdmin.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.btnAbrirAdmin.ForeColor = System.Drawing.Color.White;
+            this.btnAbrirAdmin.Image = global::archive_source.Properties.Resources.call_center;
+            this.btnAbrirAdmin.ImagePosition = 15;
+            this.btnAbrirAdmin.ImageZoom = 50;
+            this.btnAbrirAdmin.LabelPosition = 29;
+            this.btnAbrirAdmin.LabelText = "ADMINISTRADORES";
+            this.btnAbrirAdmin.Location = new System.Drawing.Point(292, 5);
+            this.btnAbrirAdmin.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAbrirAdmin.Name = "btnAbrirAdmin";
+            this.btnAbrirAdmin.Size = new System.Drawing.Size(150, 145);
+            this.btnAbrirAdmin.TabIndex = 16;
+            this.btnAbrirAdmin.Click += new System.EventHandler(this.btnAbrirAdmin_Click);
+            // 
+            // btnAbrirRango
+            // 
+            this.btnAbrirRango.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirRango.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirRango.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnAbrirRango.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbrirRango.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btnAbrirRango.ForeColor = System.Drawing.Color.White;
+            this.btnAbrirRango.Image = global::archive_source.Properties.Resources.blocks1;
+            this.btnAbrirRango.ImagePosition = 14;
+            this.btnAbrirRango.ImageZoom = 50;
+            this.btnAbrirRango.LabelPosition = 29;
+            this.btnAbrirRango.LabelText = "RANGOS TUTORES";
+            this.btnAbrirRango.Location = new System.Drawing.Point(451, 4);
+            this.btnAbrirRango.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAbrirRango.Name = "btnAbrirRango";
+            this.btnAbrirRango.Size = new System.Drawing.Size(156, 146);
+            this.btnAbrirRango.TabIndex = 17;
+            this.btnAbrirRango.Click += new System.EventHandler(this.btnAbrirRango_Click);
+            // 
+            // btnAbrirRegalo
+            // 
+            this.btnAbrirRegalo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirRegalo.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnAbrirRegalo.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnAbrirRegalo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbrirRegalo.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.btnAbrirRegalo.ForeColor = System.Drawing.Color.White;
+            this.btnAbrirRegalo.Image = global::archive_source.Properties.Resources.gift__1_;
+            this.btnAbrirRegalo.ImagePosition = 18;
+            this.btnAbrirRegalo.ImageZoom = 50;
+            this.btnAbrirRegalo.LabelPosition = 36;
+            this.btnAbrirRegalo.LabelText = "TIPOS REGALOS";
+            this.btnAbrirRegalo.Location = new System.Drawing.Point(616, 5);
+            this.btnAbrirRegalo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnAbrirRegalo.Name = "btnAbrirRegalo";
+            this.btnAbrirRegalo.Size = new System.Drawing.Size(150, 146);
+            this.btnAbrirRegalo.TabIndex = 18;
+            this.btnAbrirRegalo.Click += new System.EventHandler(this.btnAbrirRegalo_Click);
             // 
             // btnCerrar
             // 
@@ -196,21 +350,6 @@
             this.btnMenu.Zoom = 10;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // panelMenu
-            // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
-            this.panelMenu.Controls.Add(this.btnRangos);
-            this.panelMenu.Controls.Add(this.bunifuSeparator1);
-            this.panelMenu.Controls.Add(this.btnInicio);
-            this.panelMenu.Controls.Add(this.btnRegalos);
-            this.panelMenu.Controls.Add(this.btnTutores);
-            this.panelMenu.Controls.Add(this.btnAdministradores);
-            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(232, 700);
-            this.panelMenu.TabIndex = 0;
-            // 
             // btnRangos
             // 
             this.btnRangos.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
@@ -221,7 +360,7 @@
             this.btnRangos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRangos.DisabledColor = System.Drawing.Color.Gray;
             this.btnRangos.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnRangos.Iconimage = global::archive_source.Properties.Resources.guardar;
+            this.btnRangos.Iconimage = global::archive_source.Properties.Resources.blocks;
             this.btnRangos.Iconimage_right = null;
             this.btnRangos.Iconimage_right_Selected = null;
             this.btnRangos.Iconimage_Selected = null;
@@ -247,18 +386,6 @@
             this.btnRangos.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRangos.Click += new System.EventHandler(this.btnRangos_Click);
             // 
-            // bunifuSeparator1
-            // 
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(26, 133);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(172, 8);
-            this.bunifuSeparator1.TabIndex = 0;
-            this.bunifuSeparator1.Transparency = 255;
-            this.bunifuSeparator1.Vertical = false;
-            // 
             // btnInicio
             // 
             this.btnInicio.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
@@ -269,7 +396,7 @@
             this.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInicio.DisabledColor = System.Drawing.Color.Gray;
             this.btnInicio.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnInicio.Iconimage = global::archive_source.Properties.Resources.guardar;
+            this.btnInicio.Iconimage = global::archive_source.Properties.Resources.house;
             this.btnInicio.Iconimage_right = null;
             this.btnInicio.Iconimage_right_Selected = null;
             this.btnInicio.Iconimage_Selected = null;
@@ -305,7 +432,7 @@
             this.btnRegalos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegalos.DisabledColor = System.Drawing.Color.Gray;
             this.btnRegalos.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnRegalos.Iconimage = global::archive_source.Properties.Resources.guardar;
+            this.btnRegalos.Iconimage = global::archive_source.Properties.Resources.gift__1_;
             this.btnRegalos.Iconimage_right = null;
             this.btnRegalos.Iconimage_right_Selected = null;
             this.btnRegalos.Iconimage_Selected = null;
@@ -341,7 +468,7 @@
             this.btnTutores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTutores.DisabledColor = System.Drawing.Color.Gray;
             this.btnTutores.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnTutores.Iconimage = global::archive_source.Properties.Resources.guardar;
+            this.btnTutores.Iconimage = global::archive_source.Properties.Resources.wise;
             this.btnTutores.Iconimage_right = null;
             this.btnTutores.Iconimage_right_Selected = null;
             this.btnTutores.Iconimage_Selected = null;
@@ -377,7 +504,7 @@
             this.btnAdministradores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdministradores.DisabledColor = System.Drawing.Color.Gray;
             this.btnAdministradores.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnAdministradores.Iconimage = global::archive_source.Properties.Resources.guardar;
+            this.btnAdministradores.Iconimage = global::archive_source.Properties.Resources.call_center;
             this.btnAdministradores.Iconimage_right = null;
             this.btnAdministradores.Iconimage_right_Selected = null;
             this.btnAdministradores.Iconimage_Selected = null;
@@ -403,133 +530,6 @@
             this.btnAdministradores.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdministradores.Click += new System.EventHandler(this.btnAdministradores_Click);
             // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 15;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // bunifuDragControl1
-            // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.panelSuperior;
-            this.bunifuDragControl1.Vertical = true;
-            // 
-            // panelInicio
-            // 
-            this.panelInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(128)))));
-            this.panelInicio.Controls.Add(this.panelControl);
-            this.panelInicio.Controls.Add(this.Bienvenida);
-            this.panelInicio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelInicio.Location = new System.Drawing.Point(0, 0);
-            this.panelInicio.Name = "panelInicio";
-            this.panelInicio.Size = new System.Drawing.Size(934, 482);
-            this.panelInicio.TabIndex = 6;
-            // 
-            // panelControl
-            // 
-            this.panelControl.Controls.Add(this.btnAbritTutor);
-            this.panelControl.Controls.Add(this.btnAbrirAdmin);
-            this.panelControl.Controls.Add(this.btnAbrirRango);
-            this.panelControl.Controls.Add(this.btnAbrirRegalo);
-            this.panelControl.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl.Location = new System.Drawing.Point(0, 140);
-            this.panelControl.Name = "panelControl";
-            this.panelControl.Padding = new System.Windows.Forms.Padding(119, 0, 119, 0);
-            this.panelControl.Size = new System.Drawing.Size(934, 342);
-            this.panelControl.TabIndex = 15;
-            // 
-            // btnAbritTutor
-            // 
-            this.btnAbritTutor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbritTutor.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbritTutor.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
-            this.btnAbritTutor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAbritTutor.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.btnAbritTutor.ForeColor = System.Drawing.Color.White;
-            this.btnAbritTutor.Image = ((System.Drawing.Image)(resources.GetObject("btnAbritTutor.Image")));
-            this.btnAbritTutor.ImagePosition = 20;
-            this.btnAbritTutor.ImageZoom = 50;
-            this.btnAbritTutor.LabelPosition = 41;
-            this.btnAbritTutor.LabelText = "TUTORES";
-            this.btnAbritTutor.Location = new System.Drawing.Point(125, 6);
-            this.btnAbritTutor.Margin = new System.Windows.Forms.Padding(6);
-            this.btnAbritTutor.Name = "btnAbritTutor";
-            this.btnAbritTutor.Size = new System.Drawing.Size(156, 145);
-            this.btnAbritTutor.TabIndex = 15;
-            this.btnAbritTutor.Click += new System.EventHandler(this.btnAbritTutor_Click);
-            // 
-            // btnAbrirRegalo
-            // 
-            this.btnAbrirRegalo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirRegalo.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirRegalo.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
-            this.btnAbrirRegalo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAbrirRegalo.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.btnAbrirRegalo.ForeColor = System.Drawing.Color.White;
-            this.btnAbrirRegalo.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirRegalo.Image")));
-            this.btnAbrirRegalo.ImagePosition = 18;
-            this.btnAbrirRegalo.ImageZoom = 50;
-            this.btnAbrirRegalo.LabelPosition = 36;
-            this.btnAbrirRegalo.LabelText = "TIPOS REGALOS";
-            this.btnAbrirRegalo.Location = new System.Drawing.Point(616, 5);
-            this.btnAbrirRegalo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.btnAbrirRegalo.Name = "btnAbrirRegalo";
-            this.btnAbrirRegalo.Size = new System.Drawing.Size(150, 146);
-            this.btnAbrirRegalo.TabIndex = 18;
-            this.btnAbrirRegalo.Click += new System.EventHandler(this.btnAbrirRegalo_Click);
-            // 
-            // btnAbrirRango
-            // 
-            this.btnAbrirRango.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirRango.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirRango.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
-            this.btnAbrirRango.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAbrirRango.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.btnAbrirRango.ForeColor = System.Drawing.Color.White;
-            this.btnAbrirRango.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirRango.Image")));
-            this.btnAbrirRango.ImagePosition = 14;
-            this.btnAbrirRango.ImageZoom = 50;
-            this.btnAbrirRango.LabelPosition = 29;
-            this.btnAbrirRango.LabelText = "RANGOS TUTORES";
-            this.btnAbrirRango.Location = new System.Drawing.Point(451, 4);
-            this.btnAbrirRango.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnAbrirRango.Name = "btnAbrirRango";
-            this.btnAbrirRango.Size = new System.Drawing.Size(156, 146);
-            this.btnAbrirRango.TabIndex = 17;
-            this.btnAbrirRango.Click += new System.EventHandler(this.btnAbrirRango_Click);
-            // 
-            // btnAbrirAdmin
-            // 
-            this.btnAbrirAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirAdmin.color = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.btnAbrirAdmin.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
-            this.btnAbrirAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAbrirAdmin.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.btnAbrirAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnAbrirAdmin.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirAdmin.Image")));
-            this.btnAbrirAdmin.ImagePosition = 15;
-            this.btnAbrirAdmin.ImageZoom = 50;
-            this.btnAbrirAdmin.LabelPosition = 29;
-            this.btnAbrirAdmin.LabelText = "ADMINISTRADORES";
-            this.btnAbrirAdmin.Location = new System.Drawing.Point(292, 5);
-            this.btnAbrirAdmin.Margin = new System.Windows.Forms.Padding(5);
-            this.btnAbrirAdmin.Name = "btnAbrirAdmin";
-            this.btnAbrirAdmin.Size = new System.Drawing.Size(150, 145);
-            this.btnAbrirAdmin.TabIndex = 16;
-            this.btnAbrirAdmin.Click += new System.EventHandler(this.btnAbrirAdmin_Click);
-            // 
-            // Bienvenida
-            // 
-            this.Bienvenida.AutoSize = true;
-            this.Bienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bienvenida.ForeColor = System.Drawing.Color.White;
-            this.Bienvenida.Location = new System.Drawing.Point(26, 26);
-            this.Bienvenida.Name = "Bienvenida";
-            this.Bienvenida.Size = new System.Drawing.Size(547, 63);
-            this.Bienvenida.TabIndex = 10;
-            this.Bienvenida.Text = "Bienvenido [Usuario]";
-            // 
             // administradorGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -542,17 +542,17 @@
             this.Text = "administradorGUI";
             this.panelPrincipal.ResumeLayout(false);
             this.panelForm.ResumeLayout(false);
+            this.panelInicio.ResumeLayout(false);
+            this.panelInicio.PerformLayout();
+            this.panelControl.ResumeLayout(false);
             this.panelSuperior.ResumeLayout(false);
             this.panelBotones.ResumeLayout(false);
+            this.panelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
-            this.panelMenu.ResumeLayout(false);
-            this.panelInicio.ResumeLayout(false);
-            this.panelInicio.PerformLayout();
-            this.panelControl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

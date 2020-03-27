@@ -69,6 +69,12 @@
     <Compile Include="Formularios\Administrador\administradorGUI.Designer.cs">
       <DependentUpon>administradorGUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Administrador\EditarTutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\EditarTutor.Designer.cs">
+      <DependentUpon>EditarTutor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Administrador\FormTutor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Administrador\administradorGUI.resx">
       <DependentUpon>administradorGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\EditarTutor.resx">
+      <DependentUpon>EditarTutor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Administrador\FormTutor.resx">
       <DependentUpon>FormTutor.cs</DependentUpon>
@@ -147,17 +156,33 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bunifu\Bunifu_UI_v1.5.3.dll" />
+    <Content Include="Iconos\family.png" />
+    <Content Include="Iconos\lovehand.png" />
+    <Content Include="Iconos\blocks.png" />
+    <Content Include="Iconos\appointment-book.png" />
+    <Content Include="Iconos\call-center.png" />
     <Content Include="Iconos\cancel.png" />
     <Content Include="Iconos\cancelar.png" />
+    <Content Include="Iconos\classroom.png" />
+    <Content Include="Iconos\clipboard.png" />
+    <Content Include="Iconos\computer.png" />
+    <Content Include="Iconos\desk.png" />
     <Content Include="Iconos\editar.png" />
     <Content Include="Iconos\eliminar.png" />
+    <Content Include="Iconos\eye.png" />
+    <Content Include="Iconos\face.png" />
+    <Content Include="Iconos\first-aid-kit.png" />
+    <Content Include="Iconos\gift %281%29.png" />
     <Content Include="Iconos\guardar.png" />
+    <Content Include="Iconos\house.png" />
     <Content Include="Iconos\maximize.png" />
     <Content Include="Iconos\menu.png" />
     <Content Include="Iconos\minimize.png" />
     <Content Include="Iconos\nuevo.png" />
     <Content Include="Iconos\restaure.png" />
+    <Content Include="Iconos\school.png" />
     <Content Include="Iconos\search-50.png" />
+    <Content Include="Iconos\wise.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

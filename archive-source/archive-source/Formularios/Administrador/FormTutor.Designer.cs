@@ -28,67 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTutor));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTutor));
             this.panelForm = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.btnNuevoTutor = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuTextbox1 = new Bunifu.Framework.UI.BunifuTextbox();
+            this.txtBuscar = new Bunifu.Framework.UI.BunifuTextbox();
+            this.dgvTutores = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTutores)).BeginInit();
             this.SuspendLayout();
             // 
             // panelForm
             // 
             this.panelForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(128)))));
             this.panelForm.Controls.Add(this.btnNuevoTutor);
-            this.panelForm.Controls.Add(this.bunifuTextbox1);
-            this.panelForm.Controls.Add(this.bunifuCustomDataGrid1);
+            this.panelForm.Controls.Add(this.txtBuscar);
+            this.panelForm.Controls.Add(this.dgvTutores);
             this.panelForm.Controls.Add(this.label1);
             this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelForm.Location = new System.Drawing.Point(0, 0);
             this.panelForm.Name = "panelForm";
             this.panelForm.Size = new System.Drawing.Size(933, 443);
             this.panelForm.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(36, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(292, 63);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "TUTORES";
-            // 
-            // bunifuCustomDataGrid1
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(47, 158);
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(662, 252);
-            this.bunifuCustomDataGrid1.TabIndex = 2;
             // 
             // btnNuevoTutor
             // 
@@ -125,18 +88,55 @@
             this.btnNuevoTutor.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoTutor.Click += new System.EventHandler(this.btnNuevoTutor_Click);
             // 
-            // bunifuTextbox1
+            // txtBuscar
             // 
-            this.bunifuTextbox1.BackColor = System.Drawing.Color.Snow;
-            this.bunifuTextbox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.BackgroundImage")));
-            this.bunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
-            this.bunifuTextbox1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.Icon")));
-            this.bunifuTextbox1.Location = new System.Drawing.Point(459, 110);
-            this.bunifuTextbox1.Name = "bunifuTextbox1";
-            this.bunifuTextbox1.Size = new System.Drawing.Size(250, 42);
-            this.bunifuTextbox1.TabIndex = 3;
-            this.bunifuTextbox1.text = "";
+            this.txtBuscar.BackColor = System.Drawing.Color.Snow;
+            this.txtBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBuscar.BackgroundImage")));
+            this.txtBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txtBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
+            this.txtBuscar.Icon = ((System.Drawing.Image)(resources.GetObject("txtBuscar.Icon")));
+            this.txtBuscar.Location = new System.Drawing.Point(459, 110);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(250, 42);
+            this.txtBuscar.TabIndex = 3;
+            this.txtBuscar.text = "";
+            // 
+            // dgvTutores
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvTutores.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvTutores.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvTutores.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvTutores.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTutores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvTutores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTutores.DoubleBuffered = true;
+            this.dgvTutores.EnableHeadersVisualStyles = false;
+            this.dgvTutores.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.dgvTutores.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.dgvTutores.Location = new System.Drawing.Point(47, 158);
+            this.dgvTutores.Name = "dgvTutores";
+            this.dgvTutores.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvTutores.Size = new System.Drawing.Size(662, 252);
+            this.dgvTutores.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(36, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(292, 63);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "TUTORES";
             // 
             // FormTutor
             // 
@@ -149,7 +149,7 @@
             this.Text = "FormTutor";
             this.panelForm.ResumeLayout(false);
             this.panelForm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTutores)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -159,7 +159,7 @@
         private System.Windows.Forms.Panel panelForm;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuFlatButton btnNuevoTutor;
-        private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox1;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
+        private Bunifu.Framework.UI.BunifuTextbox txtBuscar;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvTutores;
     }
 }
