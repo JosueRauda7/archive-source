@@ -12,7 +12,12 @@ namespace archive_source.Clases
     {
         //Cadena de conexión con la bdd
         static string cadena = "SERVER=127.0.0.1;PORT=3306;DATABASE=archive-source;UID=root;PASSWORDS=;";
-        MySqlConnection cn = new MySqlConnection(cadena);
+        public MySqlConnection cn;
+
+        public Conexion()
+        {
+            cn = new MySqlConnection(cadena);
+        }
 
         public void abrirConexion()
         {
