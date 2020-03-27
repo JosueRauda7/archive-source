@@ -101,6 +101,9 @@
     <EmbeddedResource Include="Formularios\Administrador\administradorGUI.resx">
       <DependentUpon>administradorGUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\FormTutor.resx">
+      <DependentUpon>FormTutor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Tutor\tutorGUI.resx">
       <DependentUpon>tutorGUI.cs</DependentUpon>
     </EmbeddedResource>

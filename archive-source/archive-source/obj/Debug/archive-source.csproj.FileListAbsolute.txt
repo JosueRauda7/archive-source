@@ -17,3 +17,4 @@ C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\bin\Debu
 C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\bin\Debug\Google.Protobuf.dll
 C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\bin\Debug\Renci.SshNet.dll
 C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.FormTutor.resources
