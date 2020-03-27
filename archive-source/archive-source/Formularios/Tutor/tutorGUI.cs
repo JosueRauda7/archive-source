@@ -147,7 +147,10 @@ namespace archive_source.Formularios.Tutor
         {
             if (MessageBox.Show("¿Estás seguro de Cerrar el Programa?", "¡Alerta!", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                Application.Exit();
+
+                InicioSesion login = new InicioSesion();
+                login.Show();
+                this.Close();
             }
         }
 

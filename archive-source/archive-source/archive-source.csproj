@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="AgregarForm.cs" />
     <Compile Include="Clases\Conexion.cs" />
+    <Compile Include="Clases\Login.cs" />
     <Compile Include="EjemploInterfazUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +100,12 @@
     <Compile Include="FrmOpcionEjemplo.Designer.cs">
       <DependentUpon>FrmOpcionEjemplo.cs</DependentUpon>
     </Compile>
+    <Compile Include="InicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioSesion.Designer.cs">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </Compile>
     <Compile Include="OtroFormEjemplo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOpcionEjemplo.resx">
       <DependentUpon>FrmOpcionEjemplo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioSesion.resx">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OtroFormEjemplo.resx">
       <DependentUpon>OtroFormEjemplo.cs</DependentUpon>
