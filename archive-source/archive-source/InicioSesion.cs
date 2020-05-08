@@ -34,7 +34,7 @@ namespace archive_source
                 if (login.logeoAdmin(user, contra))
                 {
                     this.Hide();
-                    administradorGUI admin = new administradorGUI();
+                    administradorGUI admin = new administradorGUI(txtUser.Text);
                     admin.Show();
                 }
                 else if (login.logeoTutor(user, contra))

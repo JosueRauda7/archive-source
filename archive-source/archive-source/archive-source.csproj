@@ -70,17 +70,71 @@
     <Compile Include="Formularios\Administrador\administradorGUI.Designer.cs">
       <DependentUpon>administradorGUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Administrador\EditarAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\EditarAdministrador.Designer.cs">
+      <DependentUpon>EditarAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Administrador\EditarRangoTutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\EditarRangoTutor.Designer.cs">
+      <DependentUpon>EditarRangoTutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Administrador\EditarTipoRegalo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\EditarTipoRegalo.Designer.cs">
+      <DependentUpon>EditarTipoRegalo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Administrador\EditarTutor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Administrador\EditarTutor.Designer.cs">
       <DependentUpon>EditarTutor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Administrador\FormAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\FormAdministrador.Designer.cs">
+      <DependentUpon>FormAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Administrador\FormRangosTutores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\FormRangosTutores.Designer.cs">
+      <DependentUpon>FormRangosTutores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Administrador\FormTipoRegalo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\FormTipoRegalo.Designer.cs">
+      <DependentUpon>FormTipoRegalo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Administrador\FormTutor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Administrador\FormTutor.Designer.cs">
       <DependentUpon>FormTutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Administrador\NuevoAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\NuevoAdministrador.Designer.cs">
+      <DependentUpon>NuevoAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Administrador\NuevoRangoTutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\NuevoRangoTutor.Designer.cs">
+      <DependentUpon>NuevoRangoTutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Administrador\NuevoTipoRegalo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Administrador\NuevoTipoRegalo.Designer.cs">
+      <DependentUpon>NuevoTipoRegalo.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Administrador\NuevoTutor.cs">
       <SubType>Form</SubType>
@@ -120,11 +174,38 @@
     <EmbeddedResource Include="Formularios\Administrador\administradorGUI.resx">
       <DependentUpon>administradorGUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\EditarAdministrador.resx">
+      <DependentUpon>EditarAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\EditarRangoTutor.resx">
+      <DependentUpon>EditarRangoTutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\EditarTipoRegalo.resx">
+      <DependentUpon>EditarTipoRegalo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Administrador\EditarTutor.resx">
       <DependentUpon>EditarTutor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\FormAdministrador.resx">
+      <DependentUpon>FormAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\FormRangosTutores.resx">
+      <DependentUpon>FormRangosTutores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\FormTipoRegalo.resx">
+      <DependentUpon>FormTipoRegalo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Administrador\FormTutor.resx">
       <DependentUpon>FormTutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\NuevoAdministrador.resx">
+      <DependentUpon>NuevoAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\NuevoRangoTutor.resx">
+      <DependentUpon>NuevoRangoTutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Administrador\NuevoTipoRegalo.resx">
+      <DependentUpon>NuevoTipoRegalo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Administrador\NuevoTutor.resx">
       <DependentUpon>NuevoTutor.cs</DependentUpon>

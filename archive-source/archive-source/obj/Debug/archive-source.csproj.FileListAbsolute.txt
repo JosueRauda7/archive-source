@@ -45,3 +45,13 @@ C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-
 C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive-source.csproj.CopyComplete
 C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive-source.exe
 C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive-source.pdb
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.InicioSesion.resources
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.EditarAdministrador.resources
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.FormAdministrador.resources
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.NuevoAdministrador.resources
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.EditarRangoTutor.resources
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.EditarTipoRegalo.resources
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.FormRangosTutores.resources
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.FormTipoRegalo.resources
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.NuevoRangoTutor.resources
+C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.NuevoTipoRegalo.resources

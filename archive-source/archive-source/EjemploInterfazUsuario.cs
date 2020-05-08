@@ -152,7 +152,7 @@ namespace archive_source
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-            Formularios.Administrador.administradorGUI formAdmin = new Formularios.Administrador.administradorGUI();
+            Formularios.Administrador.administradorGUI formAdmin = new Formularios.Administrador.administradorGUI("");
             formAdmin.Show();
             this.Hide();
         }

@@ -24,6 +24,7 @@ namespace archive_source.Formularios.Administrador
         private bool menuContraido = false;
         private Color colorSeleccionado;
         private Color colorNoSeleccionado;
+        public string nombreUsuario = "";
 
         protected override void OnSizeChanged(EventArgs e)
         {
@@ -95,12 +96,14 @@ namespace archive_source.Formularios.Administrador
 
         }
 
-        public administradorGUI()
+        public administradorGUI(string username)
         {
             InitializeComponent();
             colorSeleccionado = btnInicio.BackColor;
             colorNoSeleccionado = btnAdministradores.BackColor;
             panelInicio.BringToFront();
+            nombreUsuario = username;
+            Bienvenida.Text = "Bienvenido " + username;
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -140,6 +143,7 @@ namespace archive_source.Formularios.Administrador
         {
             if (MessageBox.Show("¿Estás seguro de Cerrar el Programa?", "¡Alerta!", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
+                nombreUsuario = "";
                 InicioSesion login = new InicioSesion();
                 login.Show();
                 this.Close();
@@ -218,11 +222,9 @@ namespace archive_source.Formularios.Administrador
                 btnAdministradores.Normalcolor = colorSeleccionado;
             }
 
-            //Agregar formulario aquí
-            /*
-             AgregarForm agregarForm = new AgregarForm();
-            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
-             */
+            AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<FormAdministrador>(panelForm);
+            
         }
 
         private void btnAdministradores_Click(object sender, EventArgs e)
@@ -244,11 +246,9 @@ namespace archive_source.Formularios.Administrador
                 btnRangos.Normalcolor = colorSeleccionado;
             }
 
-            //Agregar formulario aquí
-            /*
-             AgregarForm agregarForm = new AgregarForm();
-            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
-             */
+            AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<FormRangosTutores>(panelForm);
+             
         }
 
         private void btnRangos_Click(object sender, EventArgs e)
@@ -270,11 +270,9 @@ namespace archive_source.Formularios.Administrador
                 btnRegalos.Normalcolor = colorSeleccionado;
             }
 
-            //Agregar formulario aquí
-            /*
-             AgregarForm agregarForm = new AgregarForm();
-            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
-             */
+            AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<FormTipoRegalo>(panelForm);
+            
         }
 
         private void btnRegalos_Click(object sender, EventArgs e)
