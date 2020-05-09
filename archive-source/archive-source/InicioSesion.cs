@@ -40,7 +40,7 @@ namespace archive_source
                 else if (login.logeoTutor(user, contra))
                 {
                     this.Hide();
-                    tutorGUI tutor = new tutorGUI();
+                    tutorGUI tutor = new tutorGUI(txtUser.Text);
                     tutor.Show();
                 }
                 else

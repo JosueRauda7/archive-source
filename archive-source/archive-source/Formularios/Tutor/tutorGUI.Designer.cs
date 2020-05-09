@@ -35,13 +35,6 @@
             this.panelForm = new System.Windows.Forms.Panel();
             this.panelInicio = new System.Windows.Forms.Panel();
             this.panelControl = new System.Windows.Forms.FlowLayoutPanel();
-            this.Bienvenida = new System.Windows.Forms.Label();
-            this.panelSuperior = new System.Windows.Forms.Panel();
-            this.panelBotones = new System.Windows.Forms.Panel();
-            this.panelMenu = new System.Windows.Forms.Panel();
-            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.btnAbrirBeneficiarios = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnAbrirFamilias = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnAbrirHMed = new Bunifu.Framework.UI.BunifuTileButton();
@@ -49,11 +42,15 @@
             this.btnAbrirMed = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnAbrirEscuelas = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnAbrirRegalos = new Bunifu.Framework.UI.BunifuTileButton();
+            this.Bienvenida = new System.Windows.Forms.Label();
+            this.panelSuperior = new System.Windows.Forms.Panel();
+            this.panelBotones = new System.Windows.Forms.Panel();
             this.btnCerrar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMinimizar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnRestaurar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMaximizar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMenu = new Bunifu.Framework.UI.BunifuImageButton();
+            this.panelMenu = new System.Windows.Forms.Panel();
             this.btnRegalos = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnHistorialMed = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEscuelas = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -62,18 +59,21 @@
             this.btnFamilias = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnBeneficiarios = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnInicio = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panelPrincipal.SuspendLayout();
             this.panelForm.SuspendLayout();
             this.panelInicio.SuspendLayout();
             this.panelControl.SuspendLayout();
             this.panelSuperior.SuspendLayout();
             this.panelBotones.SuspendLayout();
-            this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
+            this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelPrincipal
@@ -132,82 +132,6 @@
             this.panelControl.Padding = new System.Windows.Forms.Padding(119, 0, 119, 0);
             this.panelControl.Size = new System.Drawing.Size(934, 342);
             this.panelControl.TabIndex = 15;
-            // 
-            // Bienvenida
-            // 
-            this.Bienvenida.AutoSize = true;
-            this.Bienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bienvenida.ForeColor = System.Drawing.Color.White;
-            this.Bienvenida.Location = new System.Drawing.Point(26, 26);
-            this.Bienvenida.Name = "Bienvenida";
-            this.Bienvenida.Size = new System.Drawing.Size(547, 63);
-            this.Bienvenida.TabIndex = 10;
-            this.Bienvenida.Text = "Bienvenido [Usuario]";
-            // 
-            // panelSuperior
-            // 
-            this.panelSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
-            this.panelSuperior.Controls.Add(this.panelBotones);
-            this.panelSuperior.Controls.Add(this.btnMenu);
-            this.panelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSuperior.Location = new System.Drawing.Point(232, 0);
-            this.panelSuperior.Name = "panelSuperior";
-            this.panelSuperior.Size = new System.Drawing.Size(952, 100);
-            this.panelSuperior.TabIndex = 2;
-            // 
-            // panelBotones
-            // 
-            this.panelBotones.Controls.Add(this.btnCerrar);
-            this.panelBotones.Controls.Add(this.btnMinimizar);
-            this.panelBotones.Controls.Add(this.btnRestaurar);
-            this.panelBotones.Controls.Add(this.btnMaximizar);
-            this.panelBotones.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelBotones.Location = new System.Drawing.Point(671, 0);
-            this.panelBotones.Name = "panelBotones";
-            this.panelBotones.Size = new System.Drawing.Size(281, 100);
-            this.panelBotones.TabIndex = 6;
-            // 
-            // panelMenu
-            // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
-            this.panelMenu.Controls.Add(this.btnRegalos);
-            this.panelMenu.Controls.Add(this.btnHistorialMed);
-            this.panelMenu.Controls.Add(this.btnEscuelas);
-            this.panelMenu.Controls.Add(this.btnMedicamentos);
-            this.panelMenu.Controls.Add(this.btnEstudios);
-            this.panelMenu.Controls.Add(this.btnFamilias);
-            this.panelMenu.Controls.Add(this.btnBeneficiarios);
-            this.panelMenu.Controls.Add(this.btnInicio);
-            this.panelMenu.Controls.Add(this.bunifuSeparator1);
-            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(232, 700);
-            this.panelMenu.TabIndex = 1;
-            // 
-            // bunifuSeparator1
-            // 
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(23, 142);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(172, 6);
-            this.bunifuSeparator1.TabIndex = 0;
-            this.bunifuSeparator1.Transparency = 255;
-            this.bunifuSeparator1.Vertical = false;
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 15;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // bunifuDragControl1
-            // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.panelSuperior;
-            this.bunifuDragControl1.Vertical = true;
             // 
             // btnAbrirBeneficiarios
             // 
@@ -349,6 +273,40 @@
             this.btnAbrirRegalos.TabIndex = 21;
             this.btnAbrirRegalos.Click += new System.EventHandler(this.btnAbrirRegalos_Click);
             // 
+            // Bienvenida
+            // 
+            this.Bienvenida.AutoSize = true;
+            this.Bienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bienvenida.ForeColor = System.Drawing.Color.White;
+            this.Bienvenida.Location = new System.Drawing.Point(26, 26);
+            this.Bienvenida.Name = "Bienvenida";
+            this.Bienvenida.Size = new System.Drawing.Size(547, 63);
+            this.Bienvenida.TabIndex = 10;
+            this.Bienvenida.Text = "Bienvenido [Usuario]";
+            // 
+            // panelSuperior
+            // 
+            this.panelSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.panelSuperior.Controls.Add(this.panelBotones);
+            this.panelSuperior.Controls.Add(this.btnMenu);
+            this.panelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSuperior.Location = new System.Drawing.Point(232, 0);
+            this.panelSuperior.Name = "panelSuperior";
+            this.panelSuperior.Size = new System.Drawing.Size(952, 100);
+            this.panelSuperior.TabIndex = 2;
+            // 
+            // panelBotones
+            // 
+            this.panelBotones.Controls.Add(this.btnCerrar);
+            this.panelBotones.Controls.Add(this.btnMinimizar);
+            this.panelBotones.Controls.Add(this.btnRestaurar);
+            this.panelBotones.Controls.Add(this.btnMaximizar);
+            this.panelBotones.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelBotones.Location = new System.Drawing.Point(671, 0);
+            this.panelBotones.Name = "panelBotones";
+            this.panelBotones.Size = new System.Drawing.Size(281, 100);
+            this.panelBotones.TabIndex = 6;
+            // 
             // btnCerrar
             // 
             this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
@@ -422,6 +380,24 @@
             this.btnMenu.Zoom = 10;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
+            // panelMenu
+            // 
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
+            this.panelMenu.Controls.Add(this.btnRegalos);
+            this.panelMenu.Controls.Add(this.btnHistorialMed);
+            this.panelMenu.Controls.Add(this.btnEscuelas);
+            this.panelMenu.Controls.Add(this.btnMedicamentos);
+            this.panelMenu.Controls.Add(this.btnEstudios);
+            this.panelMenu.Controls.Add(this.btnFamilias);
+            this.panelMenu.Controls.Add(this.btnBeneficiarios);
+            this.panelMenu.Controls.Add(this.btnInicio);
+            this.panelMenu.Controls.Add(this.bunifuSeparator1);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(232, 700);
+            this.panelMenu.TabIndex = 1;
+            // 
             // btnRegalos
             // 
             this.btnRegalos.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
@@ -483,7 +459,7 @@
             this.btnHistorialMed.Margin = new System.Windows.Forms.Padding(0);
             this.btnHistorialMed.Name = "btnHistorialMed";
             this.btnHistorialMed.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
-            this.btnHistorialMed.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(10)))), ((int)(((byte)(24)))));
+            this.btnHistorialMed.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
             this.btnHistorialMed.OnHoverTextColor = System.Drawing.Color.White;
             this.btnHistorialMed.selected = false;
             this.btnHistorialMed.Size = new System.Drawing.Size(232, 67);
@@ -710,6 +686,30 @@
             this.btnInicio.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
+            // bunifuSeparator1
+            // 
+            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator1.LineThickness = 1;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(23, 142);
+            this.bunifuSeparator1.Name = "bunifuSeparator1";
+            this.bunifuSeparator1.Size = new System.Drawing.Size(172, 6);
+            this.bunifuSeparator1.TabIndex = 0;
+            this.bunifuSeparator1.Transparency = 255;
+            this.bunifuSeparator1.Vertical = false;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 15;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panelSuperior;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // tutorGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -727,12 +727,12 @@
             this.panelControl.ResumeLayout(false);
             this.panelSuperior.ResumeLayout(false);
             this.panelBotones.ResumeLayout(false);
-            this.panelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
+            this.panelMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

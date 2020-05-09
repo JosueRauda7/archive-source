@@ -142,6 +142,132 @@
     <Compile Include="Formularios\Administrador\NuevoTutor.Designer.cs">
       <DependentUpon>NuevoTutor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Tutor\Beneficiarios\EditarBeneficiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Beneficiarios\EditarBeneficiario.Designer.cs">
+      <DependentUpon>EditarBeneficiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Beneficiarios\FormMiembroFamiliar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Beneficiarios\FormMiembroFamiliar.Designer.cs">
+      <DependentUpon>FormMiembroFamiliar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Beneficiarios\NuevoBeneficiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Beneficiarios\NuevoBeneficiario.Designer.cs">
+      <DependentUpon>NuevoBeneficiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Escuelas\EditarEscuela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Escuelas\EditarEscuela.Designer.cs">
+      <DependentUpon>EditarEscuela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Escuelas\FormEscuelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Escuelas\FormEscuelas.Designer.cs">
+      <DependentUpon>FormEscuelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Escuelas\NuevaEscuela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Escuelas\NuevaEscuela.Designer.cs">
+      <DependentUpon>NuevaEscuela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Estudios\EditarEstudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Estudios\EditarEstudio.Designer.cs">
+      <DependentUpon>EditarEstudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Estudios\FormEstudios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Estudios\FormEstudios.Designer.cs">
+      <DependentUpon>FormEstudios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Estudios\NuevoEstudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Estudios\NuevoEstudio.Designer.cs">
+      <DependentUpon>NuevoEstudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Familias\EditarFamilia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Familias\EditarFamilia.Designer.cs">
+      <DependentUpon>EditarFamilia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Familias\FormFamilia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Familias\FormFamilia.Designer.cs">
+      <DependentUpon>FormFamilia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Familias\NuevaFamilia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Familias\NuevaFamilia.Designer.cs">
+      <DependentUpon>NuevaFamilia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Gift\Editar Regalo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Gift\Editar Regalo.Designer.cs">
+      <DependentUpon>Editar Regalo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Gift\FormGift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Gift\FormGift.Designer.cs">
+      <DependentUpon>FormGift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Gift\NuevoRegalo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Gift\NuevoRegalo.Designer.cs">
+      <DependentUpon>NuevoRegalo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Historial\EditarHistorialMed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Historial\EditarHistorialMed.Designer.cs">
+      <DependentUpon>EditarHistorialMed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Historial\FormHistorialMed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Historial\FormHistorialMed.Designer.cs">
+      <DependentUpon>FormHistorialMed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Historial\NuevoHistorialMed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Historial\NuevoHistorialMed.Designer.cs">
+      <DependentUpon>NuevoHistorialMed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Medicamentos\EditarMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Medicamentos\EditarMedicamento.Designer.cs">
+      <DependentUpon>EditarMedicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Medicamentos\FormMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Medicamentos\FormMedicamento.Designer.cs">
+      <DependentUpon>FormMedicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Medicamentos\NuevoMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tutor\Medicamentos\NuevoMedicamento.Designer.cs">
+      <DependentUpon>NuevoMedicamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Tutor\tutorGUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +336,69 @@
     <EmbeddedResource Include="Formularios\Administrador\NuevoTutor.resx">
       <DependentUpon>NuevoTutor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Beneficiarios\EditarBeneficiario.resx">
+      <DependentUpon>EditarBeneficiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Beneficiarios\FormMiembroFamiliar.resx">
+      <DependentUpon>FormMiembroFamiliar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Beneficiarios\NuevoBeneficiario.resx">
+      <DependentUpon>NuevoBeneficiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Escuelas\EditarEscuela.resx">
+      <DependentUpon>EditarEscuela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Escuelas\FormEscuelas.resx">
+      <DependentUpon>FormEscuelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Escuelas\NuevaEscuela.resx">
+      <DependentUpon>NuevaEscuela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Estudios\EditarEstudio.resx">
+      <DependentUpon>EditarEstudio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Estudios\FormEstudios.resx">
+      <DependentUpon>FormEstudios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Estudios\NuevoEstudio.resx">
+      <DependentUpon>NuevoEstudio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Familias\EditarFamilia.resx">
+      <DependentUpon>EditarFamilia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Familias\FormFamilia.resx">
+      <DependentUpon>FormFamilia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Familias\NuevaFamilia.resx">
+      <DependentUpon>NuevaFamilia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Gift\Editar Regalo.resx">
+      <DependentUpon>Editar Regalo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Gift\FormGift.resx">
+      <DependentUpon>FormGift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Gift\NuevoRegalo.resx">
+      <DependentUpon>NuevoRegalo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Historial\EditarHistorialMed.resx">
+      <DependentUpon>EditarHistorialMed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Historial\FormHistorialMed.resx">
+      <DependentUpon>FormHistorialMed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Historial\NuevoHistorialMed.resx">
+      <DependentUpon>NuevoHistorialMed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Medicamentos\EditarMedicamento.resx">
+      <DependentUpon>EditarMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Medicamentos\FormMedicamento.resx">
+      <DependentUpon>FormMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tutor\Medicamentos\NuevoMedicamento.resx">
+      <DependentUpon>NuevoMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Tutor\tutorGUI.resx">
       <DependentUpon>tutorGUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -275,5 +464,6 @@
     <Content Include="Iconos\search-50.png" />
     <Content Include="Iconos\wise.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

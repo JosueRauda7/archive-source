@@ -23,6 +23,7 @@ namespace archive_source.Formularios.Tutor
         private bool menuContraido = false;
         private Color colorSeleccionado;
         private Color colorNoSeleccionado;
+        public string nombreUsuario;
 
         protected override void OnSizeChanged(EventArgs e)
         {
@@ -96,12 +97,14 @@ namespace archive_source.Formularios.Tutor
             btnRegalos.Normalcolor = color;
         }
 
-        public tutorGUI()
+        public tutorGUI(string username)
         {
             InitializeComponent();
             colorSeleccionado = btnInicio.BackColor;
             colorNoSeleccionado = btnBeneficiarios.BackColor;
             panelInicio.BringToFront();
+            nombreUsuario = username;
+            Bienvenida.Text = "Bienvenido " + nombreUsuario;
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -201,11 +204,10 @@ namespace archive_source.Formularios.Tutor
                 cambiarColoresBotones(colorNoSeleccionado);
                 btnBeneficiarios.Normalcolor = colorSeleccionado;
             }
-            //Agregar formulario aquí
-            /*
-             AgregarForm agregarForm = new AgregarForm();
-            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
-             */
+            
+            AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<Beneficiarios.FormMiembroFamiliar>(panelForm);
+            
         }
 
         private void btnBeneficiarios_Click(object sender, EventArgs e)
@@ -226,11 +228,9 @@ namespace archive_source.Formularios.Tutor
                 cambiarColoresBotones(colorNoSeleccionado);
                 btnFamilias.Normalcolor = colorSeleccionado;
             }
-            //Agregar formulario aquí
-            /*
-             AgregarForm agregarForm = new AgregarForm();
-            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
-             */
+            
+            AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<Familias.FormFamilia>(panelForm);
         }
 
         private void btnFamilias_Click(object sender, EventArgs e)
@@ -251,11 +251,10 @@ namespace archive_source.Formularios.Tutor
                 cambiarColoresBotones(colorNoSeleccionado);
                 btnHistorialMed.Normalcolor = colorSeleccionado;
             }
-            //Agregar formulario aquí
-            /*
-             AgregarForm agregarForm = new AgregarForm();
-            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
-             */
+            
+            AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<Historial.FormHistorialMed>(panelForm);
+
         }
 
         private void btnHistorialMed_Click(object sender, EventArgs e)
@@ -276,11 +275,10 @@ namespace archive_source.Formularios.Tutor
                 cambiarColoresBotones(colorNoSeleccionado);
                 btnEstudios.Normalcolor = colorSeleccionado;
             }
-            //Agregar formulario aquí
-            /*
-             AgregarForm agregarForm = new AgregarForm();
-            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
-             */
+            
+            AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<Estudios.FormEstudios>(panelForm);
+             
         }
 
         private void btnEstudios_Click(object sender, EventArgs e)
@@ -301,11 +299,10 @@ namespace archive_source.Formularios.Tutor
                 cambiarColoresBotones(colorNoSeleccionado);
                 btnMedicamentos.Normalcolor = colorSeleccionado;
             }
-            //Agregar formulario aquí
-            /*
+            
              AgregarForm agregarForm = new AgregarForm();
-            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
-             */
+            agregarForm.abrirFormulario<Medicamentos.FormMedicamento>(panelForm);
+             
         }
 
         private void btnMedicamentos_Click(object sender, EventArgs e)
@@ -326,11 +323,10 @@ namespace archive_source.Formularios.Tutor
                 cambiarColoresBotones(colorNoSeleccionado);
                 btnEscuelas.Normalcolor = colorSeleccionado;
             }
-            //Agregar formulario aquí
-            /*
-             AgregarForm agregarForm = new AgregarForm();
-            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
-             */
+            
+            AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<Escuelas.FormEscuelas>(panelForm);
+            
         }
 
         private void btnEscuelas_Click(object sender, EventArgs e)
@@ -351,11 +347,10 @@ namespace archive_source.Formularios.Tutor
                 cambiarColoresBotones(colorNoSeleccionado);
                 btnRegalos.Normalcolor = colorSeleccionado;
             }
-            //Agregar formulario aquí
-            /*
-             AgregarForm agregarForm = new AgregarForm();
-            agregarForm.abrirFormulario<NombreFormulario>(panelForm);
-             */
+            
+            AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<Gift.FormGift>(panelForm);
+            
         }
 
         private void btnRegalos_Click(object sender, EventArgs e)

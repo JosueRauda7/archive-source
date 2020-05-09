@@ -159,7 +159,7 @@ namespace archive_source
 
         private void btnTutor_Click(object sender, EventArgs e)
         {
-            Formularios.Tutor.tutorGUI formTutor = new Formularios.Tutor.tutorGUI();
+            Formularios.Tutor.tutorGUI formTutor = new Formularios.Tutor.tutorGUI("");
             formTutor.Show();
             this.Hide();
         }
