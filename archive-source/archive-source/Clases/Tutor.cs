@@ -34,7 +34,7 @@ namespace archive_source.Clases
         Conexion conexion = new Conexion();
         DataTable dt;
 
-        public void ingresarTutor(string usuario,string nombre, string apellido,string telefono,string correo,int id_grado)
+        public void ingresarTutor(string usuario, string nombre, string apellido, string telefono, string correo, int id_grado)
         {
             conexion.abrirConexion();
             try
@@ -84,14 +84,14 @@ namespace archive_source.Clases
             }
             conexion.cerrarConexion();
         }
-        public void listarTutor(DataGridView dgv,string filtro)
+        public void listarTutor(DataGridView dgv, string filtro)
         {
             conexion.abrirConexion();
             try
             {
-                dt = new DataTable();                
-                MySqlCommand comando = new MySqlCommand("Select s.Usuario, s.Nombre, s.Telefono, s.Correo, s.Contra, CONCAT(g.NombreGrado, '(', g.RangoMinimo, ' - ', g.RangoMaximo, ' años)') AS Rango from Sub s inner join grado g on s.id_grado = g.id_grado where s.Usuario like @filtro", conexion.cn);                
-                comando.Parameters.AddWithValue("@filtro", filtro+"%");
+                dt = new DataTable();
+                MySqlCommand comando = new MySqlCommand("Select s.Usuario, s.Nombre, s.Telefono, s.Correo, s.Contra, CONCAT(g.NombreGrado, '(', g.RangoMinimo, ' - ', g.RangoMaximo, ' años)') AS Rango from Sub s inner join grado g on s.id_grado = g.id_grado where s.Usuario like @filtro", conexion.cn);
+                comando.Parameters.AddWithValue("@filtro", filtro + "%");
 
                 MySqlDataAdapter da = new MySqlDataAdapter(comando);
                 da.Fill(dt);

@@ -26,22 +26,22 @@ namespace archive_source.Clases
         public DataTable llenarcmbGrado()
         {
             string consulta = "Select id_grado, CONCAT(NombreGrado,'(' ,RangoMinimo, ' - ' , RangoMaximo,' años)') AS Rango from grado";
-            MySqlDataAdapter da = new MySqlDataAdapter(consulta,conexion.cn);
+            MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion.cn);
             DataTable dt = new DataTable();
             da.Fill(dt);
 
             return dt;
         }
 
-        public void insertarGrado(string nombregrado,int edadmin,int edadmax)
+        public void insertarGrado(string nombregrado, int edadmin, int edadmax)
         {
             conexion.abrirConexion();
             try
             {
                 string query;
-                
+
                 query = "INSERT into grado VALUES (null,@nombre,@edadmin,@edadmax)";
-                MySqlCommand comando = new MySqlCommand(query, conexion.cn);                
+                MySqlCommand comando = new MySqlCommand(query, conexion.cn);
                 comando.Parameters.AddWithValue("@nombre", nombregrado);
                 comando.Parameters.AddWithValue("@edadmin", edadmin);
                 comando.Parameters.AddWithValue("@edadmax", edadmax);
@@ -78,7 +78,7 @@ namespace archive_source.Clases
             conexion.cerrarConexion();
         }
 
-        public void listarGrado(DataGridView dgv,string filtro)
+        public void listarGrado(DataGridView dgv, string filtro)
         {
             conexion.abrirConexion();
             try

@@ -29,7 +29,7 @@ namespace archive_source.Clases
 
         Conexion conexion = new Conexion();
 
-        public void insertarAdmin(string usuario,string nombre,string telefono,string correo)
+        public void insertarAdmin(string usuario, string nombre, string telefono, string correo)
         {
             conexion.abrirConexion();
             try
@@ -45,7 +45,7 @@ namespace archive_source.Clases
                 comando.Parameters.AddWithValue("@contra", contra);
                 comando.Parameters.AddWithValue("@Correo", correo);
                 comando.ExecuteNonQuery();
-                
+
                 MessageBox.Show("Administrador agregado con éxito");
             }
             catch (Exception ex)
@@ -58,12 +58,12 @@ namespace archive_source.Clases
         }
 
         public void listarAdmin(DataGridView dgv)
-        {            
+        {
             conexion.abrirConexion();
             try
             {
                 dt = new DataTable();
-                MySqlDataAdapter da = new MySqlDataAdapter("Select * from main",conexion.cn);
+                MySqlDataAdapter da = new MySqlDataAdapter("Select * from main", conexion.cn);
                 da.Fill(dt);
                 dgv.DataSource = dt;
 
@@ -77,17 +77,17 @@ namespace archive_source.Clases
             conexion.cerrarConexion();
         }
 
-        public void listarAdmin(DataGridView dgv,string filtro)
+        public void listarAdmin(DataGridView dgv, string filtro)
         {
             conexion.abrirConexion();
             try
             {
                 dt = new DataTable();
                 MySqlCommand comando = new MySqlCommand("Select * from main Where Usuario like @filtro", conexion.cn);
-                comando.Parameters.AddWithValue("@filtro", filtro +"%");
+                comando.Parameters.AddWithValue("@filtro", filtro + "%");
 
                 MySqlDataAdapter da = new MySqlDataAdapter(comando);
-                
+
                 da.Fill(dt);
                 dgv.DataSource = dt;
 
