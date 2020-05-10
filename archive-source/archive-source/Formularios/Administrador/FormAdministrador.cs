@@ -36,21 +36,40 @@ namespace archive_source.Formularios.Administrador
         {
             admin.listarAdmin(dgvAdministradores, txtBuscar.text);
             this.dgvAdministradores.Columns[0].Visible = false;
+            btnEliminar.Visible = false;
+            btnModificar.Visible = false;
         }
 
         private void dgvAdministradores_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            DataGridViewRow dgvr = dgvAdministradores.CurrentRow;            
+            DataGridViewRow dgvr = dgvAdministradores.CurrentRow;
+            btnEliminar.Visible = true;
+            btnModificar.Visible = true;
 
-            admin.Id_admin = int.Parse(dgvr.Cells[0].Value.ToString());
-            admin.Usuario = dgvr.Cells[1].Value.ToString();
-            admin.Nombre = dgvr.Cells[2].Value.ToString();
-            admin.Telefono = dgvr.Cells[3].Value.ToString();
-            admin.Correo = dgvr.Cells[5].Value.ToString();
+        }
 
-           // AgregarForm agregarForm = new AgregarForm();
-           // agregarForm.abrirFormulario<EditarAdministrador>(panelForm);            
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow dgvr = dgvAdministradores.CurrentRow;
+            int id_admin;
+            id_admin = int.Parse(dgvr.Cells[0].Value.ToString());
 
+            admin.eliminarAdmin(id_admin);
+            btnEliminar.Visible = false;
+            btnModificar.Visible = false;
+
+            admin.listarAdmin(dgvAdministradores);
+            this.dgvAdministradores.Columns[0].Visible = false;
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow dgvr = dgvAdministradores.CurrentRow;
+            int id_admin;
+            id_admin = int.Parse(dgvr.Cells[0].Value.ToString());
+
+            AgregarForm agregarForm = new AgregarForm();
+            agregarForm.abrirFormulario<EditarAdministrador>(panelForm, id_admin, 2);
         }
     }
 }

@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdministrador));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdministrador));
             this.panelForm = new System.Windows.Forms.Panel();
             this.btnNuevoAdministrador = new Bunifu.Framework.UI.BunifuFlatButton();
             this.txtBuscar = new Bunifu.Framework.UI.BunifuTextbox();
             this.dgvAdministradores = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnModificar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnEliminar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panelForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAdministradores)).BeginInit();
             this.SuspendLayout();
@@ -44,6 +46,8 @@
             // panelForm
             // 
             this.panelForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(128)))));
+            this.panelForm.Controls.Add(this.btnModificar);
+            this.panelForm.Controls.Add(this.btnEliminar);
             this.panelForm.Controls.Add(this.btnNuevoAdministrador);
             this.panelForm.Controls.Add(this.txtBuscar);
             this.panelForm.Controls.Add(this.dgvAdministradores);
@@ -158,6 +162,80 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ADMINISTRADORES";
             // 
+            // btnModificar
+            // 
+            this.btnModificar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
+            this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
+            this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnModificar.BorderRadius = 0;
+            this.btnModificar.ButtonText = "Modificar fila";
+            this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnModificar.DisabledColor = System.Drawing.Color.Gray;
+            this.btnModificar.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnModificar.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnModificar.Iconimage")));
+            this.btnModificar.Iconimage_right = null;
+            this.btnModificar.Iconimage_right_Selected = null;
+            this.btnModificar.Iconimage_Selected = null;
+            this.btnModificar.IconMarginLeft = 0;
+            this.btnModificar.IconMarginRight = 0;
+            this.btnModificar.IconRightVisible = true;
+            this.btnModificar.IconRightZoom = 0D;
+            this.btnModificar.IconVisible = true;
+            this.btnModificar.IconZoom = 90D;
+            this.btnModificar.IsTab = false;
+            this.btnModificar.Location = new System.Drawing.Point(982, 284);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
+            this.btnModificar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(128)))));
+            this.btnModificar.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnModificar.selected = false;
+            this.btnModificar.Size = new System.Drawing.Size(233, 59);
+            this.btnModificar.TabIndex = 10;
+            this.btnModificar.Text = "Modificar fila";
+            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnModificar.Textcolor = System.Drawing.Color.White;
+            this.btnModificar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Visible = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(3)))), ((int)(((byte)(39)))));
+            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(3)))), ((int)(((byte)(39)))));
+            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEliminar.BorderRadius = 0;
+            this.btnEliminar.ButtonText = "Eliminar fila";
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminar.DisabledColor = System.Drawing.Color.Gray;
+            this.btnEliminar.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnEliminar.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Iconimage")));
+            this.btnEliminar.Iconimage_right = null;
+            this.btnEliminar.Iconimage_right_Selected = null;
+            this.btnEliminar.Iconimage_Selected = null;
+            this.btnEliminar.IconMarginLeft = 0;
+            this.btnEliminar.IconMarginRight = 0;
+            this.btnEliminar.IconRightVisible = true;
+            this.btnEliminar.IconRightZoom = 0D;
+            this.btnEliminar.IconVisible = true;
+            this.btnEliminar.IconZoom = 90D;
+            this.btnEliminar.IsTab = false;
+            this.btnEliminar.Location = new System.Drawing.Point(982, 206);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(3)))), ((int)(((byte)(39)))));
+            this.btnEliminar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(3)))), ((int)(((byte)(33)))));
+            this.btnEliminar.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnEliminar.selected = false;
+            this.btnEliminar.Size = new System.Drawing.Size(233, 68);
+            this.btnEliminar.TabIndex = 9;
+            this.btnEliminar.Text = "Eliminar fila";
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEliminar.Textcolor = System.Drawing.Color.White;
+            this.btnEliminar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Visible = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
             // FormAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -182,5 +260,7 @@
         private Bunifu.Framework.UI.BunifuTextbox txtBuscar;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvAdministradores;
         private System.Windows.Forms.Label label1;
+        private Bunifu.Framework.UI.BunifuFlatButton btnModificar;
+        private Bunifu.Framework.UI.BunifuFlatButton btnEliminar;
     }
 }
