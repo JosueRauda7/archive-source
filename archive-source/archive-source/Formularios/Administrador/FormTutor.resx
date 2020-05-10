@@ -181,10 +181,10 @@
         Vu+NkQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="txtBuscar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txtBuscar2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAwAAAAB/CAYAAABYHaUHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUsSURBVHhe7dhLbltnEIRRLSB7yMz732EC2d0wTZf4gCjx
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAUsSURBVHhe7dhLbltnEIRRLSB7yMz732EC2d0wTZf4gCjx
         snAO8I3yX8rD6rw9wj///vhPkiRJ0tc28/s50j9IkiRJ0vc0s/zrpT8uSZIk6TnNTH+89MckSZIkHaOZ
         7Y+R/oAkSZKkYzXz/XPSD0uSJEk6ZjPj75d+TJIkSdJrNLP+dulH7m1+CgAAuEPa1vc2P3Wb9APXmk8B
         AIAvkDb4tebTy9KHl5rPAACAb5A2+aXmsyx9cKn5DAAA+GZpn3/UfPK39Dg1zwEAgCdKWz01z/+UHqbm
@@ -209,10 +209,10 @@
         ZvrXS39ckiRJ0vc0s/w50j9IkiRJ0mOb+f0Jb2//A0LMn+NSTMzsAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="txtBuscar.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txtBuscar2.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMKSURBVHhe7ZBLbtxADAV9gNwhu9z/hglgFAFCqZ6P3SOR
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMKSURBVHhe7ZBLbtxADAV9gNwhu9z/hglgFAFCqZ6P3SOR
         YxZQKz22HvkxDMMwDMMwDMMwDE/z6/efv9+RZ4ZnsEPukOeHFXa0V8jvhsCOdIb8/udiR7lC6vws7BBX
         Sq33x5avJDXfE1v4UXniYeyNR+WJ98IWvSej38beviej74EteEvGtmP/uiVjvbHFVjLycuzfKxnpiy1l
         Ej8N62AS74ktZBI/HetiEu+FLWISvwzrZBLvgy1xlOjlWLejRHtgCxwlWgbreJRofax8llg5rGuWWG2s

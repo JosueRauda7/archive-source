@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRangosTutores));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRangosTutores));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelForm = new System.Windows.Forms.Panel();
-            this.dgvRangosTutores = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnNuevoAdministrador = new Bunifu.Framework.UI.BunifuFlatButton();
             this.txtBuscar = new Bunifu.Framework.UI.BunifuTextbox();
+            this.dgvRangosTutores = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRangosTutores)).BeginInit();
             this.SuspendLayout();
@@ -49,46 +50,10 @@
             this.panelForm.Controls.Add(this.label1);
             this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelForm.Location = new System.Drawing.Point(0, 0);
+            this.panelForm.Margin = new System.Windows.Forms.Padding(4);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(933, 443);
+            this.panelForm.Size = new System.Drawing.Size(1244, 545);
             this.panelForm.TabIndex = 7;
-            // 
-            // dgvRangosTutores
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvRangosTutores.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvRangosTutores.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgvRangosTutores.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvRangosTutores.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRangosTutores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvRangosTutores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRangosTutores.DoubleBuffered = true;
-            this.dgvRangosTutores.EnableHeadersVisualStyles = false;
-            this.dgvRangosTutores.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.dgvRangosTutores.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvRangosTutores.Location = new System.Drawing.Point(47, 158);
-            this.dgvRangosTutores.Name = "dgvRangosTutores";
-            this.dgvRangosTutores.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvRangosTutores.Size = new System.Drawing.Size(662, 252);
-            this.dgvRangosTutores.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(36, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(639, 63);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "RANGOS DE TUTORES";
             // 
             // btnNuevoAdministrador
             // 
@@ -111,13 +76,14 @@
             this.btnNuevoAdministrador.IconVisible = true;
             this.btnNuevoAdministrador.IconZoom = 90D;
             this.btnNuevoAdministrador.IsTab = false;
-            this.btnNuevoAdministrador.Location = new System.Drawing.Point(47, 104);
+            this.btnNuevoAdministrador.Location = new System.Drawing.Point(63, 128);
+            this.btnNuevoAdministrador.Margin = new System.Windows.Forms.Padding(5);
             this.btnNuevoAdministrador.Name = "btnNuevoAdministrador";
             this.btnNuevoAdministrador.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
             this.btnNuevoAdministrador.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(118)))), ((int)(((byte)(128)))));
             this.btnNuevoAdministrador.OnHoverTextColor = System.Drawing.Color.White;
             this.btnNuevoAdministrador.selected = false;
-            this.btnNuevoAdministrador.Size = new System.Drawing.Size(152, 48);
+            this.btnNuevoAdministrador.Size = new System.Drawing.Size(203, 59);
             this.btnNuevoAdministrador.TabIndex = 4;
             this.btnNuevoAdministrador.Text = "Nuevo Rango";
             this.btnNuevoAdministrador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -132,19 +98,72 @@
             this.txtBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.txtBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(31)))), ((int)(((byte)(38)))));
             this.txtBuscar.Icon = ((System.Drawing.Image)(resources.GetObject("txtBuscar.Icon")));
-            this.txtBuscar.Location = new System.Drawing.Point(459, 110);
+            this.txtBuscar.Location = new System.Drawing.Point(612, 135);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(5);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(250, 42);
+            this.txtBuscar.Size = new System.Drawing.Size(333, 52);
             this.txtBuscar.TabIndex = 3;
             this.txtBuscar.text = "";
+            this.txtBuscar.OnTextChange += new System.EventHandler(this.txtBuscar_OnTextChange);
+            // 
+            // dgvRangosTutores
+            // 
+            this.dgvRangosTutores.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvRangosTutores.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvRangosTutores.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvRangosTutores.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvRangosTutores.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRangosTutores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvRangosTutores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvRangosTutores.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvRangosTutores.DoubleBuffered = true;
+            this.dgvRangosTutores.EnableHeadersVisualStyles = false;
+            this.dgvRangosTutores.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.dgvRangosTutores.HeaderForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvRangosTutores.Location = new System.Drawing.Point(63, 194);
+            this.dgvRangosTutores.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvRangosTutores.Name = "dgvRangosTutores";
+            this.dgvRangosTutores.ReadOnly = true;
+            this.dgvRangosTutores.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvRangosTutores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvRangosTutores.Size = new System.Drawing.Size(883, 310);
+            this.dgvRangosTutores.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(48, 27);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(789, 76);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "RANGOS DE TUTORES";
             // 
             // FormRangosTutores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 443);
+            this.ClientSize = new System.Drawing.Size(1244, 545);
             this.Controls.Add(this.panelForm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormRangosTutores";
             this.Text = "FormRangosTutores";
             this.panelForm.ResumeLayout(false);
