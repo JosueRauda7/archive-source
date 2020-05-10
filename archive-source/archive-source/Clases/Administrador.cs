@@ -50,7 +50,58 @@ namespace archive_source.Clases
             }
             catch (Exception ex)
             {
-                MessageBox.Show("No se pudo insertar el prestamo" + ex);
+                MessageBox.Show("No se pudo insertar al administrador" + ex);
+                conexion.cerrarConexion();
+                return;
+            }
+            conexion.cerrarConexion();
+        }
+        public void eliminarAdmin(int id_admin)
+        {
+            conexion.abrirConexion();
+            try
+            {
+                string query;
+                query = "DELETE FROM main Where id_admin = @id";
+                MySqlCommand comando = new MySqlCommand(query, conexion.cn);
+                comando.Parameters.AddWithValue("@id", id_admin);
+                comando.ExecuteNonQuery();
+
+                MessageBox.Show("Se ha eliminado al administrador");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo eliminar al administrador" + ex);
+                conexion.cerrarConexion();
+                return;
+            }
+            conexion.cerrarConexion();
+        }
+
+        public void recuperarAdmin(int id_admin, TextBox usuario, TextBox nombre, TextBox telefono, TextBox correo)
+        {
+            conexion.abrirConexion();
+            try
+            {
+                MySqlCommand comando = new MySqlCommand("Select * from main Where id_admin = @id", conexion.cn);
+                comando.Parameters.AddWithValue("@id", id_admin);
+
+                MySqlDataReader dr = comando.ExecuteReader();
+                while (dr.Read())
+                {
+                    usuario.Text = dr.GetValue(1).ToString();
+                    nombre.Text = dr.GetValue(2).ToString();
+                    telefono.Text = dr.GetValue(3).ToString();
+                    correo.Text = dr.GetValue(5).ToString();
+                }
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex);
                 conexion.cerrarConexion();
                 return;
             }

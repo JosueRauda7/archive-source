@@ -58,13 +58,35 @@ namespace archive_source.Clases
             conexion.cerrarConexion();
         }
 
+        public void eliminarGrado(int id_grado)
+        {
+            conexion.abrirConexion();
+            try
+            {
+                string query;
+                query = "DELETE FROM grado Where id_grado= @id";
+                MySqlCommand comando = new MySqlCommand(query, conexion.cn);
+                comando.Parameters.AddWithValue("@id", id_grado);
+                comando.ExecuteNonQuery();
+
+                MessageBox.Show("Se ha eliminado al administrador");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo eliminar al administrador" + ex);
+                conexion.cerrarConexion();
+                return;
+            }
+            conexion.cerrarConexion();
+        }
+
         public void listarGrado(DataGridView dgv)
         {
             conexion.abrirConexion();
             try
             {
                 dt = new DataTable();
-                MySqlDataAdapter da = new MySqlDataAdapter("Select NombreGrado,RangoMinimo,RangoMaximo from grado", conexion.cn);
+                MySqlDataAdapter da = new MySqlDataAdapter("Select * from grado", conexion.cn);
                 da.Fill(dt);
                 dgv.DataSource = dt;
 
@@ -85,7 +107,7 @@ namespace archive_source.Clases
             {
                 dt = new DataTable();
 
-                MySqlCommand comando = new MySqlCommand("Select NombreGrado,RangoMinimo,RangoMaximo from grado where NombreGrado like @filtro", conexion.cn);
+                MySqlCommand comando = new MySqlCommand("Select * from grado where NombreGrado like @filtro", conexion.cn);
                 comando.Parameters.AddWithValue("@filtro", filtro + "%");
 
                 MySqlDataAdapter da = new MySqlDataAdapter(comando);

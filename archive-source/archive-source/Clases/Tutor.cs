@@ -65,6 +65,28 @@ namespace archive_source.Clases
             conexion.cerrarConexion();
         }
 
+        public void eliminarTutor(int id_tutor)
+        {
+            conexion.abrirConexion();
+            try
+            {
+                string query;
+                query = "DELETE FROM sub Where id_tutor = @id";
+                MySqlCommand comando = new MySqlCommand(query, conexion.cn);
+                comando.Parameters.AddWithValue("@id", id_tutor);
+                comando.ExecuteNonQuery();
+
+                MessageBox.Show("Se ha eliminado al tutor");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo eliminar al tutor" + ex);
+                conexion.cerrarConexion();
+                return;
+            }
+            conexion.cerrarConexion();
+        }
+
         public void listarTutor(DataGridView dgv)
         {
             conexion.abrirConexion();
