@@ -12,9 +12,17 @@ namespace archive_source.Formularios.Tutor.Familias
 {
     public partial class EditarFamilia : Form
     {
+        int idFamilia = 0;
+
         public EditarFamilia()
         {
             InitializeComponent();
+        }
+
+        public EditarFamilia(int id)
+        {
+            InitializeComponent();
+            idFamilia = id;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)

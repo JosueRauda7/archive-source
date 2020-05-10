@@ -12,9 +12,27 @@ namespace archive_source.Formularios.Administrador
 {
     public partial class EditarTipoRegalo : Form
     {
+        int idTipoRegalo = 0;
+
         public EditarTipoRegalo()
         {
             InitializeComponent();
+        }
+
+        public EditarTipoRegalo(int id)
+        {
+            InitializeComponent();
+            idTipoRegalo = id;
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            Hide();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Hide();
         }
     }
 }

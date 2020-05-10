@@ -12,9 +12,17 @@ namespace archive_source.Formularios.Tutor.Escuelas
 {
     public partial class EditarEscuela : Form
     {
+        int idEscuela = 0;
+
         public EditarEscuela()
         {
             InitializeComponent();
+        }
+
+        public EditarEscuela(int id)
+        {
+            InitializeComponent();
+            idEscuela = id;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)

@@ -12,9 +12,17 @@ namespace archive_source.Formularios.Tutor.Historial
 {
     public partial class EditarHistorialMed : Form
     {
+        int idHistorialMed = 0;
+
         public EditarHistorialMed()
         {
             InitializeComponent();
+        }
+
+        public EditarHistorialMed(int id)
+        {
+            InitializeComponent();
+            idHistorialMed = id;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)

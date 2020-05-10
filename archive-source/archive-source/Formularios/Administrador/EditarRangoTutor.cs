@@ -12,9 +12,16 @@ namespace archive_source.Formularios.Administrador
 {
     public partial class EditarRangoTutor : Form
     {
+        int idRangoTutor = 0;
         public EditarRangoTutor()
         {
             InitializeComponent();
+        }
+
+        public EditarRangoTutor(int id)
+        {
+            InitializeComponent();
+            idRangoTutor = id;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)

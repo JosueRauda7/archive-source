@@ -12,9 +12,17 @@ namespace archive_source.Formularios.Tutor.Estudios
 {
     public partial class EditarEstudio : Form
     {
+        int idEstudio = 0;
+
         public EditarEstudio()
         {
             InitializeComponent();
+        }
+
+        public EditarEstudio(int id)
+        {
+            InitializeComponent();
+            idEstudio = id;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)

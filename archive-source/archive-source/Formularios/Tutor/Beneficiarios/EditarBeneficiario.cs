@@ -12,9 +12,17 @@ namespace archive_source.Formularios.Tutor.Beneficiarios
 {
     public partial class EditarBeneficiario : Form
     {
+        int idBeneficiario = 0;
+
         public EditarBeneficiario()
         {
             InitializeComponent();
+        }
+
+        public EditarBeneficiario(int id)
+        {
+            InitializeComponent();
+            idBeneficiario = id;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)

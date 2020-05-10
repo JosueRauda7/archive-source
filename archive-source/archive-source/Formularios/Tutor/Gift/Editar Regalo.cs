@@ -12,9 +12,17 @@ namespace archive_source.Formularios.Tutor.Gift
 {
     public partial class Editar_Regalo : Form
     {
+        int idRegalo = 0;
+
         public Editar_Regalo()
         {
             InitializeComponent();
+        }
+
+        public Editar_Regalo(int id)
+        {
+            InitializeComponent();
+            idRegalo = id;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)

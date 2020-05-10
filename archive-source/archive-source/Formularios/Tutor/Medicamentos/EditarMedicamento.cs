@@ -12,9 +12,17 @@ namespace archive_source.Formularios.Tutor.Medicamentos
 {
     public partial class EditarMedicamento : Form
     {
+        int idMedicamento = 0;
+
         public EditarMedicamento()
         {
             InitializeComponent();
+        }
+
+        public EditarMedicamento(int id)
+        {
+            InitializeComponent();
+            idMedicamento = id;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)

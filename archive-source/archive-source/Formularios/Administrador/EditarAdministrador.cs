@@ -12,9 +12,16 @@ namespace archive_source.Formularios.Administrador
 {
     public partial class EditarAdministrador : Form
     {
+        int idAdmin = 0;
         public EditarAdministrador()
         {
             InitializeComponent();
+        }
+
+        public EditarAdministrador(int id)
+        {
+            InitializeComponent();
+            idAdmin = id;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
