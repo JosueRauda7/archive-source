@@ -39,7 +39,7 @@ namespace archive_source
 
         }
 
-        public void abrirFormulario<FormularioAbrir>(System.Windows.Forms.Panel panelForm, int id, int moduloForm) where FormularioAbrir : System.Windows.Forms.Form, new()
+        public void abrirFormulario(System.Windows.Forms.Panel panelForm, int id, int moduloForm)
         {
             //Ejemplo:
             //abrirFormulario<FormularioAbrir>(panelForm, id, qué formulario);
@@ -47,17 +47,17 @@ namespace archive_source
 
             System.Windows.Forms.Form formularios; //Contenedor de formularios (panelForm)
 
-            formularios = panelForm.Controls.OfType<FormularioAbrir>().FirstOrDefault();
+            //formularios = panelForm.Controls.OfType<FormularioAbrir>().FirstOrDefault();
 
             formularios = null; //Cerrar los formularios dentro del panel
 
             if (formularios == null)
             {
-                formularios = new FormularioAbrir
+                /*formularios = new FormularioAbrir
                 {
                     TopLevel = false,
                     Dock = System.Windows.Forms.DockStyle.Fill
-                };
+                };*/
 
                 switch (moduloForm)
                 {
@@ -65,41 +65,84 @@ namespace archive_source
 
 
                     case 1: //Editar Admin
-                        formularios = new Formularios.Administrador.EditarTutor(id);
+                        formularios = new Formularios.Administrador.EditarTutor(id){
+                            TopLevel = false,
+                            Dock = System.Windows.Forms.DockStyle.Fill
+                        };
                         break;
                     case 2: //Editar Tutor
-                        formularios = new Formularios.Administrador.EditarAdministrador(id);
+                        formularios = new Formularios.Administrador.EditarAdministrador(id)
+                        {
+                            TopLevel = false,
+                            Dock = System.Windows.Forms.DockStyle.Fill
+                        };
                         break;
                     case 3: //Editar Rango Tutor
-                        formularios = new Formularios.Administrador.EditarRangoTutor(id);
+                        formularios = new Formularios.Administrador.EditarRangoTutor(id)
+                        {
+                            TopLevel = false,
+                            Dock = System.Windows.Forms.DockStyle.Fill
+                        };
                         break;
                     case 4: //Editar TipoRegalo
-                        formularios = new Formularios.Administrador.EditarTipoRegalo(id);
+                        formularios = new Formularios.Administrador.EditarTipoRegalo(id)
+                        {
+                            TopLevel = false,
+                            Dock = System.Windows.Forms.DockStyle.Fill
+                        };
                         break;
 
 
                     //Tutor
 
                     case 5: //Editar Beneficiario
-                        formularios = new Formularios.Tutor.Beneficiarios.EditarBeneficiario(id);
+                        formularios = new Formularios.Tutor.Beneficiarios.EditarBeneficiario(id)
+                        {
+                            TopLevel = false,
+                            Dock = System.Windows.Forms.DockStyle.Fill
+                        };
                         break;
-                    case 6: //Editar 
-                        formularios = new Formularios.Tutor.Familias.EditarFamilia(id);
+                    case 6: //Editar Familia
+                        formularios = new Formularios.Tutor.Familias.EditarFamilia(id)
+                        {
+                            TopLevel = false,
+                            Dock = System.Windows.Forms.DockStyle.Fill
+                        };
                         break;
-                    case 7:
-                        formularios = new Formularios.Tutor.Historial.EditarHistorialMed(id);
+                    case 7: //Editar Historial Médico
+                        formularios = new Formularios.Tutor.Historial.EditarHistorialMed(id)
+                        {
+                            TopLevel = false,
+                            Dock = System.Windows.Forms.DockStyle.Fill
+                        };
                         break;
-                    case 8:
-                        formularios = new Formularios.Tutor.Estudios.EditarEstudio(id);
+                    case 8: //Editar Estudio
+                        formularios = new Formularios.Tutor.Estudios.EditarEstudio(id)
+                        {
+                            TopLevel = false,
+                            Dock = System.Windows.Forms.DockStyle.Fill
+                        };
                         break;
-                    case 9:
-                        formularios = new Formularios.Tutor.Medicamentos.EditarMedicamento(id);
+                    case 9: //Editar Medicamento
+                        formularios = new Formularios.Tutor.Medicamentos.EditarMedicamento(id)
+                        {
+                            TopLevel = false,
+                            Dock = System.Windows.Forms.DockStyle.Fill
+                        };
                         break;
-                    case 10:
-                        formularios = new Formularios.Tutor.Escuelas.EditarEscuela(id);
+                    case 10: //Editar Escuela
+                        formularios = new Formularios.Tutor.Escuelas.EditarEscuela(id)
+                        {
+                            TopLevel = false,
+                            Dock = System.Windows.Forms.DockStyle.Fill
+                        };
                         break;
-                    case 11:
-                        formularios = new Formularios.Tutor.Gift.Editar_Regalo(id);
+                    case 11: //Editar Regalo
+                        formularios = new Formularios.Tutor.Gift.Editar_Regalo(id)
+                        {
+                            TopLevel = false,
+                            Dock = System.Windows.Forms.DockStyle.Fill
+                        };
                         break;
                     default:
                         break;

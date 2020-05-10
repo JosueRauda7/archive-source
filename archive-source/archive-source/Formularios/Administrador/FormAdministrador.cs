@@ -69,7 +69,7 @@ namespace archive_source.Formularios.Administrador
             id_admin = int.Parse(dgvr.Cells[0].Value.ToString());
 
             AgregarForm agregarForm = new AgregarForm();
-            agregarForm.abrirFormulario<EditarAdministrador>(panelForm, id_admin, 2);
+            agregarForm.abrirFormulario(panelForm, id_admin, 2);
         }
     }
 }
