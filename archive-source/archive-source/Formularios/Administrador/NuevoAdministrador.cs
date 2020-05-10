@@ -8,10 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace archive_source.Formularios.Administrador
 {
+    using archive_source.Clases;
     public partial class NuevoAdministrador : Form
     {
+        Administrador admin = new Administrador();
         public NuevoAdministrador()
         {
             InitializeComponent();
@@ -19,12 +22,17 @@ namespace archive_source.Formularios.Administrador
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            Hide();
+            admin.insertarAdmin(txtUsuario.Text,txtNombres.Text,txtTelefono.Text,txtCorreo.Text);
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

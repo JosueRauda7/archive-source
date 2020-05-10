@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace archive_source.Formularios.Administrador
 {
+    using archive_source.Clases;
     public partial class NuevoTipoRegalo : Form
     {
+        TipoRegalo regalo = new TipoRegalo();
         public NuevoTipoRegalo()
         {
             InitializeComponent();
@@ -19,7 +21,7 @@ namespace archive_source.Formularios.Administrador
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            Hide();
+            regalo.insertarTipoRegalo(txtTipoRegalo.Text);
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

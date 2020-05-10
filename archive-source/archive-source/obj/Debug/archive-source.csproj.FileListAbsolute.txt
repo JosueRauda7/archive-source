@@ -76,3 +76,33 @@ C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debu
 C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Estudios.EditarEstudio.resources
 C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Estudios.FormEstudios.resources
 C:\Users\Shiro\reposGitHub\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Estudios.NuevoEstudio.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.EditarAdministrador.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.EditarRangoTutor.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.EditarTipoRegalo.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.FormAdministrador.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.FormRangosTutores.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.FormTipoRegalo.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.NuevoAdministrador.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.NuevoRangoTutor.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Administrador.NuevoTipoRegalo.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Beneficiarios.EditarBeneficiario.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Beneficiarios.FormMiembroFamiliar.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Beneficiarios.NuevoBeneficiario.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Escuelas.EditarEscuela.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Escuelas.FormEscuelas.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Escuelas.NuevaEscuela.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Estudios.EditarEstudio.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Estudios.FormEstudios.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Estudios.NuevoEstudio.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Familias.EditarFamilia.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Familias.FormFamilia.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Familias.NuevaFamilia.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Gift.Editar_Regalo.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Gift.FormGift.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Gift.NuevoRegalo.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Historial.EditarHistorialMed.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Historial.FormHistorialMed.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Historial.NuevoHistorialMed.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Medicamentos.EditarMedicamento.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Medicamentos.FormMedicamento.resources
+C:\Users\ivanm\OneDrive\Documents\Ivan\UDB\Ciclo 1 2020\ADS\ProyectoADS\archive-source\archive-source\archive-source\obj\Debug\archive_source.Formularios.Tutor.Medicamentos.NuevoMedicamento.resources
