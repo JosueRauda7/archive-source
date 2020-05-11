@@ -42,6 +42,51 @@ namespace archive_source.Clases
             conexion.cerrarConexion();
         }
 
+        public void recuperarTipoRegalo(int id_tiporegalo,TextBox nombre)
+        {
+            conexion.abrirConexion();
+            try
+            {
+                MySqlCommand comando = new MySqlCommand("Select * from tiporegalo Where id_tipoRegalo = @id", conexion.cn);
+                comando.Parameters.AddWithValue("@id", id_tiporegalo);
+
+                MySqlDataReader dr = comando.ExecuteReader();
+                while (dr.Read())
+                {
+                    nombre.Text = dr.GetValue(1).ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex);
+                conexion.cerrarConexion();
+                return;
+            }
+            conexion.cerrarConexion();
+        }
+
+        public void modificarTIpoRegalo(int id_tiporegalo,string nombre)
+        {
+            conexion.abrirConexion();
+            try
+            {
+                string query;
+                query = "UPDATE tiporegalo SET Nombre=@nombre where id_tipoRegalo=@id";
+                MySqlCommand comando = new MySqlCommand(query, conexion.cn);
+                comando.Parameters.AddWithValue("@id", id_tiporegalo);
+                comando.Parameters.AddWithValue("@nombre", nombre);
+                comando.ExecuteNonQuery();
+
+                MessageBox.Show("Tipo de regalo modificado con éxito");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo modificar el tipo de regalo" + ex);
+                conexion.cerrarConexion();
+                return;
+            }
+            conexion.cerrarConexion();
+        }
 
         public void eliminarTipoRegalo(int id_tiporegalo)
         {

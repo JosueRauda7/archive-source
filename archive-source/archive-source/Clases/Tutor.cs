@@ -53,12 +53,66 @@ namespace archive_source.Clases
                 comando.Parameters.AddWithValue("@id_admin", 1);
                 comando.Parameters.AddWithValue("@id_grado", id_grado);
                 comando.ExecuteNonQuery();
-
                 MessageBox.Show("Tutor agregado con éxito");
             }
             catch (Exception ex)
             {
                 MessageBox.Show("No se pudo agregar al tutor" + ex);
+                conexion.cerrarConexion();
+                return;
+            }
+            conexion.cerrarConexion();
+        }
+
+        public void modificarTutor(int id_tutor,string usuario, string nombre, string apellido, string telefono, string correo, int id_grado)
+        {
+            conexion.abrirConexion();
+            try
+            {
+                string query;
+                query = "UPDATE sub SET Usuario=@usuario, Nombre=@nombre,Apellido=@apellido,Telefono=@telefono,Correo=@correo, id_grado=@id_grado where id_tutor=@id";
+                MySqlCommand comando = new MySqlCommand(query, conexion.cn);
+                comando.Parameters.AddWithValue("@id", id_tutor);
+                comando.Parameters.AddWithValue("@usuario", usuario);
+                comando.Parameters.AddWithValue("@nombre", nombre);
+                comando.Parameters.AddWithValue("@apellido", apellido);
+                comando.Parameters.AddWithValue("@telefono", telefono);
+                comando.Parameters.AddWithValue("@correo", correo);                               
+                comando.Parameters.AddWithValue("@id_grado", id_grado);
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Tutor modificado con éxito");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo modificar al tutor" + ex);
+                conexion.cerrarConexion();
+                return;
+            }
+            conexion.cerrarConexion();
+        }
+
+        public void recuperarTutor(int id_tutor, TextBox usuario, TextBox nombre,TextBox apellido, TextBox telefono, TextBox correo,ref int id_grado)
+        {
+            conexion.abrirConexion();
+            try
+            {
+                MySqlCommand comando = new MySqlCommand("Select * from sub Where id_tutor = @id", conexion.cn);
+                comando.Parameters.AddWithValue("@id", id_tutor);
+
+                MySqlDataReader dr = comando.ExecuteReader();
+                while (dr.Read())
+                {
+                    usuario.Text = dr.GetValue(1).ToString();
+                    nombre.Text = dr.GetValue(2).ToString();
+                    apellido.Text = dr.GetValue(3).ToString();
+                    telefono.Text = dr.GetValue(4).ToString();
+                    correo.Text = dr.GetValue(5).ToString();
+                    id_grado = int.Parse(dr.GetValue(8).ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex);
                 conexion.cerrarConexion();
                 return;
             }
@@ -93,7 +147,7 @@ namespace archive_source.Clases
             try
             {
                 dt = new DataTable();
-                MySqlDataAdapter da = new MySqlDataAdapter("Select s.Usuario,s.Nombre,s.Telefono,s.Correo,s.Contra, CONCAT(g.NombreGrado,'(' ,g.RangoMinimo, ' - ' , g.RangoMaximo,' años)') AS Rango from Sub s inner join grado g on s.id_grado=g.id_grado", conexion.cn);
+                MySqlDataAdapter da = new MySqlDataAdapter("Select s.id_tutor,s.Usuario,s.Nombre,s.Telefono,s.Correo,s.Contra, CONCAT(g.NombreGrado,'(' ,g.RangoMinimo, ' - ' , g.RangoMaximo,' años)') AS Rango from Sub s inner join grado g on s.id_grado=g.id_grado", conexion.cn);
                 da.Fill(dt);
                 dgv.DataSource = dt;
 
@@ -112,7 +166,7 @@ namespace archive_source.Clases
             try
             {
                 dt = new DataTable();
-                MySqlCommand comando = new MySqlCommand("Select s.Usuario, s.Nombre, s.Telefono, s.Correo, s.Contra, CONCAT(g.NombreGrado, '(', g.RangoMinimo, ' - ', g.RangoMaximo, ' años)') AS Rango from Sub s inner join grado g on s.id_grado = g.id_grado where s.Usuario like @filtro", conexion.cn);
+                MySqlCommand comando = new MySqlCommand("Select s.id_tutor,s.Usuario, s.Nombre, s.Telefono, s.Correo, s.Contra, CONCAT(g.NombreGrado, '(', g.RangoMinimo, ' - ', g.RangoMaximo, ' años)') AS Rango from Sub s inner join grado g on s.id_grado = g.id_grado where s.Usuario like @filtro", conexion.cn);
                 comando.Parameters.AddWithValue("@filtro", filtro + "%");
 
                 MySqlDataAdapter da = new MySqlDataAdapter(comando);

@@ -94,14 +94,36 @@ namespace archive_source.Clases
                     telefono.Text = dr.GetValue(3).ToString();
                     correo.Text = dr.GetValue(5).ToString();
                 }
-
-
-
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error:" + ex);
+                conexion.cerrarConexion();
+                return;
+            }
+            conexion.cerrarConexion();
+        }
+
+        public void modificarAdmin(int id_admin,string usuario, string nombre, string telefono, string correo)
+        {
+            conexion.abrirConexion();
+            try
+            {
+                string query;
+                query = "UPDATE main SET Usuario=@usuario, Nombre=@nombre, Telefono=@telefono, Correo=@Correo where id_admin=@id";
+                MySqlCommand comando = new MySqlCommand(query, conexion.cn);
+                comando.Parameters.AddWithValue("@id", id_admin);
+                comando.Parameters.AddWithValue("@usuario", usuario);
+                comando.Parameters.AddWithValue("@nombre", nombre);
+                comando.Parameters.AddWithValue("@telefono", telefono);                
+                comando.Parameters.AddWithValue("@Correo", correo);
+                comando.ExecuteNonQuery();
+
+                MessageBox.Show("Administrador modificado con éxito");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo modificar al administrador" + ex);
                 conexion.cerrarConexion();
                 return;
             }

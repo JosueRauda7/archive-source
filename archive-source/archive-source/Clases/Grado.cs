@@ -58,6 +58,56 @@ namespace archive_source.Clases
             conexion.cerrarConexion();
         }
 
+        public void recuperarGrado(int id_admin, TextBox nombregrado, TextBox edadmin, TextBox edadmax)
+        {
+            conexion.abrirConexion();
+            try
+            {
+                MySqlCommand comando = new MySqlCommand("Select * from grado Where id_grado = @id", conexion.cn);
+                comando.Parameters.AddWithValue("@id", id_admin);
+                MySqlDataReader dr = comando.ExecuteReader();
+                while (dr.Read())
+                {
+                    nombregrado.Text = dr.GetValue(1).ToString();
+                    edadmin.Text = dr.GetValue(2).ToString();
+                    edadmax.Text = dr.GetValue(3).ToString();                    
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex);
+                conexion.cerrarConexion();
+                return;
+            }
+            conexion.cerrarConexion();
+        }
+
+        public void modificarGrado(int id_grado,string nombregrado, int edadmin, int edadmax)
+        {
+            conexion.abrirConexion();
+            try
+            {
+                string query;
+
+                query = "UPDATE grado SET NombreGrado=@nombre, RangoMinimo=@edadmin, RangoMaximo=@edadmax where id_grado=@id";
+                MySqlCommand comando = new MySqlCommand(query, conexion.cn);
+                comando.Parameters.AddWithValue("@id", id_grado);
+                comando.Parameters.AddWithValue("@nombre", nombregrado);
+                comando.Parameters.AddWithValue("@edadmin", edadmin);
+                comando.Parameters.AddWithValue("@edadmax", edadmax);
+                comando.ExecuteNonQuery();
+
+                MessageBox.Show("Grado modificado con éxito");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo modificar el grado" + ex);
+                conexion.cerrarConexion();
+                return;
+            }
+            conexion.cerrarConexion();
+        }
+
         public void eliminarGrado(int id_grado)
         {
             conexion.abrirConexion();
@@ -69,11 +119,11 @@ namespace archive_source.Clases
                 comando.Parameters.AddWithValue("@id", id_grado);
                 comando.ExecuteNonQuery();
 
-                MessageBox.Show("Se ha eliminado al administrador");
+                MessageBox.Show("Se ha eliminado el grado");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("No se pudo eliminar al administrador" + ex);
+                MessageBox.Show("No se pudo eliminar al grado" + ex);
                 conexion.cerrarConexion();
                 return;
             }

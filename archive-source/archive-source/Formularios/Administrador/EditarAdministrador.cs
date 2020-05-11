@@ -23,15 +23,14 @@ namespace archive_source.Formularios.Administrador
         public EditarAdministrador(int id)
         {
             InitializeComponent();
-            id_admin = id;
-            MessageBox.Show("ID: " + id);
+            id_admin = id;            
 
             admin.recuperarAdmin(id, txtUsuario, txtNombres, txtTelefono, txtCorreo);
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Nombre: " + txtNombres.Text);
+            admin.modificarAdmin(id_admin,txtUsuario.Text,txtNombres.Text,txtTelefono.Text,txtCorreo.Text);
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

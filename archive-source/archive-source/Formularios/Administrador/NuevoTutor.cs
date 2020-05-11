@@ -32,5 +32,10 @@ namespace archive_source.Formularios.Administrador
         {
             Hide();
         }
+
+        private void panelForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
